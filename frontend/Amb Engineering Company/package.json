@@ -9,9 +9,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "host":"vite --host"
+    "host": "vite --host"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.14",
     "axios": "^1.8.1",
     "framer-motion": "^12.4.10",
     "gsap": "^3.12.7",
@@ -22,7 +23,8 @@
     "react-hot-toast": "^2.5.2",
     "react-intersection-observer": "^9.16.0",
     "react-scroll-trigger": "^0.6.14",
-    "react-typed": "^2.0.12"
+    "react-typed": "^2.0.12",
+    "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
