@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 const HelmetLayout = ({
   children, // This is the 'children' prop.
-  title = "Amb Eng Company",
+  title = "Amb Engineering Company",
   description = "In this company you can cut piece from Laser Cutting Machine",
   keywords = "laser cutting,amb engineering,fiber laser cut,gate design laser cut",
   author = "Farhan Majeed",
