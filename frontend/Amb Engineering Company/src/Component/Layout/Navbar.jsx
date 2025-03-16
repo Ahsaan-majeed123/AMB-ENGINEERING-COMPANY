@@ -304,7 +304,7 @@ const Navbar = () => {
                 </li>
 
                 {hoverdropdowncatelogue && (
-                  <div className="absolute top-13 font-semibold md:top-19 left-0 text-sm lg:text-xl w-40 border md:w-67 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800   z-10">
+                  <div className="absolute h-[78vh] overflow-y-auto top-13 font-semibold md:top-19 left-0 text-sm lg:text-xl w-40 border md:w-67 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800   z-10">
                     <ul className="space-y-2">
                       {cateloguedownloadlist.map((p, i) => (
                         <li
@@ -523,7 +523,7 @@ const Navbar = () => {
               </li>
 
               {hoverdropdowncatelogue && (
-                <div className="absolute left-0 top-6 md:top-5 text-sm lg:text-xl w-58 md:w-69 mt-1  md:mt-2 bg-white text-gray-800 rounded shadow-lg z-2">
+                <div className="absolute h-[45vh] overflow-y-auto left-0 top-6 md:top-5 text-sm lg:text-xl w-58 md:w-69 mt-1  md:mt-2 bg-white text-gray-800 rounded shadow-lg z-2">
                   <ul>
                     {cateloguedownloadlist.map((p, i) => (
                       <li
