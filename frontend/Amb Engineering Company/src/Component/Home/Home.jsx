@@ -150,7 +150,7 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
     <HelmetLayout title="Laser Cut Machine - Amb Eng Company">
       <div className={` 
          ${navbaropenCheckForBelowContainerMargin?"mt-15":"mt-0"} 
-        box-border bg-gradient-to-r from-blue-500 to-purple-500 h-[67vh] sm:h-[85vh] w-[99vw]`}>
+        box-border bg-gradient-to-r from-black via-gray-600  to-purple-700  h-[67vh] sm:h-[85vh] w-[99vw]`}>
         <div className="relative">
           {/* Image carousel */}
           <div className="relative w-full h-[57vh] sm:h-[75vh]">

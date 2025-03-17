@@ -112,7 +112,7 @@ const Navbar = () => {
   }, []);
 
   const toggleMenu = () => {
-    console.log("jjj");
+    // console.log("jjj");
 
     setIsOpen(!isOpen);
     setnavbaropenCheckForBelowContainerMargin(!isOpen);
@@ -120,18 +120,7 @@ const Navbar = () => {
     setHoverDropdownCatelogue(false);
   };
 
-  // const toggleMenu2 = () => {
-  //   console.log("before is open:",isOpen);
-
-  //   setIsOpen(!isOpen);
-  //   // setIsOpen((prev)=>!prev);
-  //   setnavbaropenCheckForBelowContainerMargin(!isOpen);
-  //   // setnavbaropenCheckForBelowContainerMargin((prev)=>!prev);
-  //   setHoverDropdown(false);
-  //   setHoverDropdownCatelogue(false);
-  //   console.log("after is open:",isOpen);
-
-  // };
+ 
 
   const toggleMenu2andfetchurlpdf = (event, index) => {
     setIsOpen(!isOpen);
@@ -177,7 +166,7 @@ const Navbar = () => {
     <div>
       {/* Navbar Container */}
       {/* <div className="fixed border border-8 left-0 right-0 top-0 z-1000 bg-gradient-to-r from-blue-500 to-purple-600 p-2 pb-4 md:pb-2 w-[100%]  shadow-lg box-border "> */}
-      <div className="fixed pt-1 pb-1  left-0 right-0 top-0 z-20 max-h-20 bg-gradient-to-br from-black via-gray-850  to-purple-700 shadow-lg box-border w-full ">
+      <div className={`fixed pt-1 pb-1  left-0 right-0 top-0 z-20 max-h-20 bg-gradient-to-br from-black via-gray-850  to-purple-700 shadow-sm box-border w-full  shadow-gray-600`}>
         {/* Logo and Navigation Section */}
 
         <div className="w-full  box-border flex justify-between  items-center">
@@ -371,12 +360,15 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          // onBlur={toggleMenu}
-          // tabIndex={-1}
-          // onMouseLeave={toggleMenu}
-          className="lg:hidden  fixed z-20  bg-gradient-to-br from-gray-950   to-purple-700/80 top-20 p-2  box-border shadow-lg w-full"
+          
+        className={`lg:hidden fixed z-20 bg-gradient-to-br from-gray-950 to-purple-700/80 top-20 p-2 box-border shadow-lg w-full 
+         
+          `}
+ 
+
         >
-          <ul className="flex flex-col items-center space-y-4 text-white">
+          <ul className={`flex flex-col items-center space-y-4 text-white   
+          `}>
             <li
               className={`w-[97.5vw] text-center ${
                 bgcolormobile && "border-l-8 border-amber-600 bg-blue-500/25"
@@ -442,29 +434,6 @@ const Navbar = () => {
 
             {/* Our Services Dropdown */}
 
-
-
-
-
-
-            {/* <li>
-
-            <NavLink
-                className={({ isActive }) => {
-                  if (isActive) {
-                    setbgcolormobile2(true);
-                    return "text-2xl font-semibold  shadow-2xs pr-2 pl-2 text-white rounded-md";
-                  } else {
-                    setbgcolormobile2(false);
-                    return "text-xl  hover:text-yellow-300 transition-all duration-300";
-                  }
-                }}
-                to="/about-AMB-ENG-Company"
-                onClick={() => toggleMenu()}
-              >
-                About Us
-              </NavLink>
-            </li> */}
 
 
            
