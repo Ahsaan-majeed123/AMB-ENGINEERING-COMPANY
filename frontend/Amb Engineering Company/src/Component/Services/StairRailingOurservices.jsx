@@ -72,7 +72,7 @@ const StairRailingOurServices = () => {
     <HelmetLayout title="Stair Designs - Laser Cut">
       <div
         className={`bg-gray-100 ${
-          navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
+          navbaropenCheckForBelowContainerMargin ? "mt-17" : "mt-0"
         }  `}
         // className={`bg-gray-100 ${
         //   navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
@@ -85,7 +85,7 @@ const StairRailingOurServices = () => {
             className="object-fill w-full h-full "
           />
 
-          <div className="absolute top-1/3 lg:left-1/3 left-1/5  text-center overflow-hidden ">
+          <div className="absolute font-sec top-1/3 lg:left-1/3 left-1/8  text-center overflow-hidden ">
             <motion.div
               className="mt-1 text-white text-2xl sm:text-4xl font-bold w-max mx-auto leading-relaxed"
               initial={{ opacity: 0, y: -20 }}

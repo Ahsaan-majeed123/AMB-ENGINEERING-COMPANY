@@ -42,8 +42,8 @@ const MechanicalPartsLaserCutting = () => {
       <div
         className={`
         
-         bg-gradient-to-l from-gray-100 to-blue-100
-        md:mt-5 mt-3 md:py-20 py-10
+         bg-gradient-to-l  from-gray-100 to-blue-100
+        md:mt-4 mt-4 md:py-20 py-10
            pt-6`}
       >
         {/* Section 1 */}

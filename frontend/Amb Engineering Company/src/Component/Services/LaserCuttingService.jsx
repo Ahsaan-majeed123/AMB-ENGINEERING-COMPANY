@@ -40,7 +40,7 @@ const LaserCuttingService = () => {
   return (
     <HelmetLayout title="Laser Cut Details">
       <div
-        className={`md:mt-5 mt-3  bg-gray-300  py-0 md:py-13`}
+        className={`md:mt-4 mt-4  bg-gray-300  py-0 md:py-13`}
         // className={`${
         //   navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
         // } py-0`}

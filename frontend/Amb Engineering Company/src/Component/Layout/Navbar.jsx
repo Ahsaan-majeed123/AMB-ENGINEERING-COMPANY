@@ -177,13 +177,13 @@ const Navbar = () => {
     <div>
       {/* Navbar Container */}
       {/* <div className="fixed border border-8 left-0 right-0 top-0 z-1000 bg-gradient-to-r from-blue-500 to-purple-600 p-2 pb-4 md:pb-2 w-[100%]  shadow-lg box-border "> */}
-      <div className="fixed pt-1 pb-1  left-0 right-0 top-0 z-20 bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg box-border w-full">
+      <div className="fixed pt-1 pb-1  left-0 right-0 top-0 z-20 max-h-20 bg-gradient-to-br from-black via-gray-850  to-purple-700 shadow-lg box-border w-full ">
         {/* Logo and Navigation Section */}
 
         <div className="w-full  box-border flex justify-between  items-center">
           {/* Logo Section */}
           <NavLink to={"/"}>
-            <div className="w-15 mt-2 mb-2  ml-6 md:w-17 cursor-pointer rounded-full border-4 border-white shadow-lg">
+            <div className="w-15  mb-1  ml-6 md:w-15 cursor-pointer rounded-full border-4 border-white shadow-lg">
               <img
                 className="w-15 md:w-17 rounded-full"
                 src={logourl}
@@ -196,13 +196,13 @@ const Navbar = () => {
 
           {/* Navbar Links */}
           <div className=" w-360   items-center   xl:w-full  text-center  ">
-            <ul className="hidden h-20   lg:flex lg:max-w-3xl xl:max-w-4xl mx-auto justify-between  text-white items-center">
+            <ul className="hidden h-18   lg:flex lg:max-w-3xl xl:max-w-4xl mx-auto justify-between  text-white items-center">
               {/* Home Link */}
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "lg:text-xl md:text-xl  xl:text-2xl text-sm font-bold  border-l-5 border-amber-600  bg-white text-black font-sec  shadow-2xs h-full flex items-center pr-7 pl-7 rounded-md"
-                    : "text-xl hover:text-yellow-300 transition-all  pb-1 duration-300"
+                    ? "lg:text-xl   md:text-xl  xl:text-xl text-sm font-bold  border-l-5 border-amber-600  bg-white text-black font-sec  shadow-2xs flex items-center pr-7 pl-7 h-12 rounded-xl"
+                    : "text-xl  hover:text-yellow-300 transition-all  pb-1 duration-200"
                 }
                 to="/"
               >
@@ -247,8 +247,8 @@ const Navbar = () => {
                 onMouseLeave={() => setHoverDropdown(false)}
                 className={({ isActive }) =>
                   isActive
-                    ? "relative md:text-xl h-20 flex items-center border-l-5 border-amber-600  text-sm xl:text-2xl font-bold shadow-2xs pr-2 pl-2 bg-white text-black font-sec rounded-md"
-                    : "relative text-xl h-20 flex items-center hover:text-yellow-300 transition-all duration-300"
+                    ? "relative md:text-xl  flex items-center border-l-5 border-amber-600  text-sm xl:text-xl font-bold shadow-2xs pr-2 pl-2 bg-white text-black font-sec    h-12 rounded-xl"
+                    : "relative text-xl h-12 flex items-center hover:text-yellow-300 transition-all duration-200"
                 }
                 to="/OurServicesClick"
               >
@@ -258,12 +258,16 @@ const Navbar = () => {
                 </div>
 
                 {hoverdropdown && (
-                  <div className="absolute left-0 top-13 md:top-19 text-sm w-40 md:w-max mt-1 bg-white text-gray-800 rounded rounded-l-none shadow-lg z-10">
+                  <div className="
+                   text-sm w-40 md:w-max mt-1 bg-white text-gray-800 rounded rounded-l-none shadow-lg fixed top-14">
+                  {/* <div className="
+                  absolute left-0 top-13 md:top-10
+                   text-sm w-40 md:w-max mt-1 bg-white text-gray-800 rounded rounded-l-none shadow-lg z-300 "> */}
                     <ul>
                       {ourservicehoverdata.map((p, i) => (
                         <li key={i}>
                           <NavLink
-                            className="p-3 border-b font-semibold flex justify-start hover:bg-amber-600 hover:text-white transition-colors duration-300 cursor-pointer"
+                            className="p-3 border-b font-semibold flex justify-start hover:bg-amber-600 hover:text-white transition duration-200 cursor-pointer "
                             to={p.path}
                           >
                             {p.name}
@@ -279,8 +283,8 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? " text-sm md:text-xl xl:text-2xl border-l-5 border-amber-600  font-bold flex items-center shadow-2xs pr-2 pl-2 h-20 text-black bg-white font-sec rounded-md"
-                    : "text-xl hover:text-yellow-300 transition-all pl-1 pr-1 lg:pb-1 pb-3 duration-300"
+                    ? " text-sm md:text-xl xl:text-xl border-l-5 border-amber-600  font-bold flex items-center shadow-2xs pr-2 pl-2 text-black bg-white font-sec h-12 rounded-xl"
+                    : "text-xl hover:text-yellow-300 transition-all pl-1 pr-1 lg:pb-1 pb-3 duration-200"
                 }
                 to="/about-AMB-ENG-Company"
               >
@@ -293,8 +297,8 @@ const Navbar = () => {
                 onMouseLeave={() => setHoverDropdownCatelogue(false)}
                 className={({ isActive }) =>
                   isActive
-                    ? "relative lg:text-xl font-sec border-l-5 border-amber-600  font-bold  shadow-2xs pr-2 pl-2  flex justify-center bg-white text-black h-20  rounded-md "
-                    : "relative text-xl h-20 flex items-center  hover:text-yellow-300 transition-all duration-300"
+                    ? "relative lg:text-xl font-sec border-l-5 border-amber-600  font-bold  shadow-2xs pr-2 pl-2  flex justify-center bg-white text-black   h-12 rounded-xl "
+                    : "relative text-xl h-20 flex items-center  hover:text-yellow-300 transition-all duration-200"
                 }
                 to="/home"
               >
@@ -304,13 +308,15 @@ const Navbar = () => {
                 </li>
 
                 {hoverdropdowncatelogue && (
-                  <div className="absolute h-[78vh] overflow-y-auto top-13 font-semibold md:top-19 left-0 text-sm lg:text-xl w-40 border md:w-67 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800   z-10">
+                  <div className="
+                  overflow-y-auto  font-medium text-sm lg:text-xl w-40 border md:w-62 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800  fixed top-14  ">
+                  {/* <div className="absolute h-[78vh] overflow-y-auto top-13 font-semibold md:top-19 left-0 text-sm lg:text-xl w-40 border md:w-67 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800   z-10"> */}
                     <ul className="space-y-2">
                       {cateloguedownloadlist.map((p, i) => (
                         <li
                           key={i}
                           onClick={(event) => fetchurlpdf(event, i)}
-                          className="p-3 pr-10 flex justify-start hover:bg-amber-600 hover:text-white transition-colors duration-300  
+                          className="p-3 pr-10 flex justify-start hover:bg-amber-600 hover:text-white transition-colors duration-200  
                           border-b
                           cursor-pointer"
                         >
@@ -326,8 +332,8 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "xl:text-2xl md:text-xl border-l-5 border-amber-600  flex items-center h-20 bg-white text-black text-xl font-bold font-sec pb-1  shadow-2xs pr-2 pl-2  rounded-md"
-                    : "text-xl hover:text-yellow-300 transition-all duration-300"
+                    ? "xl:text-2xl md:text-xl border-l-5 border-amber-600  flex items-center  bg-white text-black text-xl font-bold font-sec pb-1  shadow-2xs pr-2 pl-2  h-12 rounded-xl"
+                    : "text-xl hover:text-yellow-300 transition-all duration-200  h-12 items-center flex"
                 }
                 to="/contact"
               >
@@ -368,19 +374,19 @@ const Navbar = () => {
           // onBlur={toggleMenu}
           // tabIndex={-1}
           // onMouseLeave={toggleMenu}
-          className="lg:hidden  fixed z-20  bg-gradient-to-r from-blue-500 to-purple-600 mt-20 md:mt-20 p-4 box-border shadow-lg w-full"
+          className="lg:hidden  fixed z-20  bg-gradient-to-br from-gray-950   to-purple-700/80 top-20 p-2  box-border shadow-lg w-full"
         >
           <ul className="flex flex-col items-center space-y-4 text-white">
             <li
-              className={`w-[100vw] text-center ${
-                bgcolormobile && " border-l-8 border-amber-600 bg-gray-600/63"
+              className={`w-[97.5vw] text-center ${
+                bgcolormobile && "border-l-8 border-amber-600 bg-blue-500/25"
               }`}
             >
               <NavLink
                 className={({ isActive }) => {
                   if (isActive) {
                     setbgcolormobile(true);
-                    return "text-2xl font-semibold  shadow-2xs pr-2 pl-2 text-white rounded-md";
+                    return "text-2xl font-semibold  shadow-2xs pr-2 pl-2 text-white rounded-md ";
                   } else {
                     setbgcolormobile(false);
                     return "text-xl  hover:text-yellow-300 transition-all duration-300";
@@ -393,25 +399,17 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {/* <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "text-2xl font-semibold border-l-4  border-amber-600 bg-gray-600/63   shadow-2xs pr-2 pl-2  text-white rounded-md"
-                  : "text-xl  hover:text-yellow-300 transition-all duration-300"
-              }
-              to="/"
-              onClick={() => toggleMenu()}
-            >
-              <li>Home</li>
-            </NavLink> */}
+
+
+
 
             {/* Our Services Dropdown */}
-            {/* <NavLink
+            <NavLink
               onMouseEnter={() => setHoverDropdown(true)}
               onMouseLeave={() => setHoverDropdown(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "relative md:text-2xl text-xl lg:text-2xl font-bold shadow-2xs pr-2 pl-2 lg:font-semibold  bg-gradient-to-r from-blue-900  to-yellow-700 text-white rounded-md"
+                  ? "relative md:text-xl text-xl lg:text-xl font-semibold shadow-2xs pr-2 pl-2   border-l-8 border-amber-600 bg-blue-500/25  text-white rounded-md"
                   : "relative text-xl hover:text-yellow-300 transition-all duration-300"
               }
               to="/OurServicesClick"
@@ -440,50 +438,40 @@ const Navbar = () => {
                   </ul>
                 </div>
               )}
-            </NavLink> */}
-
-            {/* Our Services Dropdown */}
-            <NavLink
-              onMouseEnter={() => setHoverDropdown(true)}
-              onMouseLeave={() => setHoverDropdown(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "relative md:text-2xl text-xl lg:text-2xl font-bold shadow-2xs pr-2 pl-2 lg:font-semibold border-l-8 border-amber-600 bg-gray-600/63 text-white rounded-md"
-                  : // ? "relative text-xl font-semibold shadow-2xs pr-2 pl-2  bg-gradient-to-r from-blue-900 to-yellow-700 text-white rounded-md"
-                    "relative text-xl hover:text-yellow-300 transition-all duration-300"
-              }
-              to="/OurServicesClick"
-            >
-              <div
-                className="flex items-center whitespace-nowrap"
-                onClick={() => setHoverDropdown((prev) => !prev)}
-              >
-                Our Services
-                <IoMdArrowDropdown />
-              </div>
-
-              {hoverdropdown && (
-                <div className="absolute left-0 top-6 md:top-6 text-sm lg:text-xl w-38 md:w-45 mt-1 bg-white text-gray-800 rounded shadow-lg z-10">
-                  <ul>
-                    {ourservicehoverdata.map((p, i) => (
-                      <li key={i}>
-                        <NavLink
-                          to={p.path}
-                          className="p-3 border-b flex justify-start hover:bg-amber-600 hover:text-white font-bold transition-colors duration-300 cursor-pointer"
-                          onClick={() => toggleMenu()}
-                        >
-                          {p.name}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </NavLink>
 
+            {/* Our Services Dropdown */}
+
+
+
+
+
+
+            {/* <li>
+
+            <NavLink
+                className={({ isActive }) => {
+                  if (isActive) {
+                    setbgcolormobile2(true);
+                    return "text-2xl font-semibold  shadow-2xs pr-2 pl-2 text-white rounded-md";
+                  } else {
+                    setbgcolormobile2(false);
+                    return "text-xl  hover:text-yellow-300 transition-all duration-300";
+                  }
+                }}
+                to="/about-AMB-ENG-Company"
+                onClick={() => toggleMenu()}
+              >
+                About Us
+              </NavLink>
+            </li> */}
+
+
+           
+
             <li
-              className={`w-[100vw] text-center ${
-                bgcolormobile2 && " border-l-8 border-amber-600 bg-gray-600/63"
+              className={`w-[97.5vw] text-center ${
+                bgcolormobile2 && "border-l-8 border-amber-600 bg-blue-500/25"
               }`}
             >
               <NavLink
@@ -510,7 +498,7 @@ const Navbar = () => {
               to={"/home"}
               className={({ isActive }) =>
                 isActive
-                  ? "relative lg:text-2xl md:text-2xl text-xl font-bold border-l-8 border-amber-600 bg-gray-600/63 shadow-2xs pr-2 pl-2   text-white rounded-md"
+                  ? "relative lg:text-xl md:text-2xl text-xl font-semibold border-l-8 border-amber-600 bg-blue-500/25  shadow-2xs pr-2 pl-2   text-white rounded-md"
                   : "relative text-xl hover:text-yellow-300 transition-all duration-300"
               }
             >
@@ -541,8 +529,8 @@ const Navbar = () => {
             </NavLink>
 
             <li
-              className={`w-[100vw] text-center ${
-                bgcolormobile3 && " border-l-8 border-amber-600 bg-gray-600/63"
+              className={`w-[97.5vw] text-center ${
+                bgcolormobile3 && " border-l-8 border-amber-600 bg-blue-500/25"
               }`}
             >
               <NavLink

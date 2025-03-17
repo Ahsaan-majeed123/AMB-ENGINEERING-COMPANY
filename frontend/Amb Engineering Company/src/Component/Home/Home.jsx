@@ -149,7 +149,7 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
   return (
     <HelmetLayout title="Laser Cut Machine - Amb Eng Company">
       <div className={` 
-         ${navbaropenCheckForBelowContainerMargin?"mt-0":"mt-4"} 
+         ${navbaropenCheckForBelowContainerMargin?"mt-15":"mt-0"} 
         box-border bg-gradient-to-r from-blue-500 to-purple-500 h-[67vh] sm:h-[85vh] w-[99vw]`}>
         <div className="relative">
           {/* Image carousel */}
@@ -172,7 +172,7 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
                   key={index}
                   src={image}
                   alt={`carousel-${index}`}
-                  className={`absolute top-0 left-0 w-full h-full object-fill rounded-lg transition-opacity duration-1000 ease-in-out ${
+                  className={`absolute top-0 left-0 w-full h-full object-fill  transition-opacity duration-1000 ease-in-out ${
                     imgno === index ? "opacity-100 " : "opacity-0 "
                   }`}
                 />

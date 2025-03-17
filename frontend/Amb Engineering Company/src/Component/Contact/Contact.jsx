@@ -89,7 +89,8 @@ const Contact = () => {
     <HelmetLayout title="Contact Us - AMB Eng Comp">
       <div>
         <div
-          className={` md:mt-5 mt-3     md:py-13 bg-gray-50 py-12`}
+         
+          className={` ${navbaropenCheckForBelowContainerMargin?"mt-15":"mt-0"} md:py-13 bg-gray-50 py-12`}
           // className={` ${
           //   navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
           // } bg-gray-50 py-12`}

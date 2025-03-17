@@ -47,7 +47,7 @@ const AboutUS = () => {
     <HelmetLayout title="About US">
       <div
         className={` ${
-          navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
+          navbaropenCheckForBelowContainerMargin ? "mt-16" : "mt-0"
         }`}
       >
         {/* Background section with image */}

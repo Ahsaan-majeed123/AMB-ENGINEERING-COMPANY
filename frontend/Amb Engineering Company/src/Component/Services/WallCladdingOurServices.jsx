@@ -144,7 +144,7 @@ const WallCladdingOurServices = () => {
       <div
         // className={`bg-gray-100 md:mt-5 mt-3    py-0 md:py-13 `}
         className={`bg-gray-100 ${
-          navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
+          navbaropenCheckForBelowContainerMargin ? "mt-17" : "mt-0"
         } `}
       >
         <div className="relative h-[54vh] w-full  overflow-hidden">
