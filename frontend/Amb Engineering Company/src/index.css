@@ -9,3 +9,7 @@
     --font-display--font-variation-settings: "opsz"32;
     --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
+
+::selection{
+    background-color: rgb(255, 145, 0);
+}
