@@ -39,24 +39,25 @@ const Footer = () => {
     }, []);
   return (
     <div className="mt-9 bg-gray-800 text-white py-8">
-      <div className=" px-4  flex max-w-7xl mx-auto">
+      <div className=" px-4 flex flex-col space-y-2 space-x-1 justify-center items-center   md:flex-row max-w-7xl mx-auto">
         <Link to="/">
         <img
           // src="https://m.media-amazon.com/images/I/51YJsBTSFSL.jpg"
           src= {logourl}
-          className="rounded-full   object-fill  w-65 h-43 sm:w-55 sm:h-45"
+          className="rounded-full   object-fill  w-40 h-40   sm:w-55 sm:h-55"
           height={200}
           width={200}
           alt="My logo for amb engineering company and go to home"
         />
         </Link>
 
-        <div className="w-full text-center">
+        <div className=" text-center  w-full  md:w-[55vw]">
           <h2 className="text-2xl font-semibold mb-4">
           AMB Engineering Engineering Company
           </h2>
-          <div className="text-lg mb-2">
-            <strong>Our Address: </strong>T No, 4 Near Coca-Cola Wearhouse Sandha Lahore, Punjab
+          <div className="text-lg mb-1">
+            <strong>Our Address: </strong> <br />
+            T No, 4 Near Coca-Cola Wearhouse Sandha Lahore, Punjab
           </div>
           <div className="text-lg mb-4">
             <strong>Opening Hours:</strong>
@@ -66,14 +67,8 @@ const Footer = () => {
             Sunday: Closed
           </div>
         </div>
-      </div>
 
-      <div className=" pl-10 pr-10 border-t border-gray-700 pt-4 flex justify-between">
-        <p className="text-sm">
-          &copy; 2025 AMB Engineering Company.  All rights reserved.
-        </p>
-
-        <div className="flex gap-3 text-white sm:mr-24 text-xl  ">
+      <div className=" gap-3 mb-3  text-white text-2xl sm:text-xl md:text-3xl   w-full flex justify-center  md:w-[25vw] overflow-auto  ">
           <a  href="https://www.facebook.com/farhanbajwa.g/"  target="_blank" title="My Facebook" className="cursor-pointer  hover:text-red-400">
             <FaFacebook />
           </a>
@@ -87,7 +82,28 @@ const Footer = () => {
             <FaTwitter />
           </div>
         </div>
+
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Footer Bottom */}
+      <div className="bg-gray-900 text-center py-6 mt-10">
+        <p className="text-sm text-gray-400">
+          &copy; 2025 AMB Engineering Company. All rights reserved.
+        </p>
+      </div>
+      
     </div>
   );
 };
