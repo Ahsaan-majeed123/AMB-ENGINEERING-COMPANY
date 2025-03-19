@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://www.ambengineers.com/</loc>
-	<lastmod>2025-03-18T10:00:59+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<!-- created with www.mysitemapgenerator.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.ambengineers.com/</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/laser-cutting-service-1</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/laser-cutting-Mechanical-parts-3</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/Gate-Laser-Cut-Design-4</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/home</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/OurServicesClick</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/StairRailingOurServices</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/WallCladingOurServices</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/contact</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/about-AMB-ENG-Company</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Dynamically generated Gate design URLs -->
+  <url>
+    <loc>https://www.ambengineers.com/Gate-Laser-Cut-Design-4/gate-design-0</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/Gate-Laser-Cut-Design-4/gate-design-1</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Dynamically generated Stair design URLs -->
+  <url>
+    <loc>https://www.ambengineers.com/Stair-Laser-Cut-Design-4/stair-design-0</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/Stair-Laser-Cut-Design-4/stair-design-1</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Dynamically generated Wall Cladding design URLs -->
+  <url>
+    <loc>https://www.ambengineers.com/Wallclading-Laser-Cut-Design-8/Wallclading-design-0</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ambengineers.com/Wallclading-Laser-Cut-Design-8/Wallclading-design-1</loc>
+    <lastmod>2025-03-18T10:00:59+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
