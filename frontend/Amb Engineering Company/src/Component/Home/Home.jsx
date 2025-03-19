@@ -125,8 +125,29 @@ const Home = () => {
   useEffect(() => {
     if (faviconUrl) {
       // Update the favicon dynamically
-      document.querySelector("link[rel='icon']").href = faviconUrl;
-      document.querySelector("link[rel='apple-touch-icon']").href = faviconUrl;
+     const favicon =  document.querySelector("#favicon");
+     const appleIcon = document.querySelector("#apple-icon");
+    
+
+     if (favicon) {
+      favicon.href = faviconUrl;
+    } else {
+      const newFavicon = document.createElement("link");
+      newFavicon.rel = "icon";
+      newFavicon.href = faviconUrl;
+      document.head.appendChild(newFavicon);
+    }
+
+    if (appleIcon) {
+      appleIcon.href = faviconUrl;
+    } else {
+      const newAppleIcon = document.createElement("link");
+      newAppleIcon.rel = "apple-touch-icon";
+      newAppleIcon.href = faviconUrl;
+      document.head.appendChild(newAppleIcon);
+    }
+
+
     }
   }, [faviconUrl]); // This will trigger when faviconUrl state changes
 
