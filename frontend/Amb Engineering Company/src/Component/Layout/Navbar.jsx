@@ -5,6 +5,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { stairrailingcontext } from "../Context/StairRailing4";
 import axios from "axios";
 import { Backend_Url } from './../utils/utils';
+import { FaWindowClose } from "react-icons/fa";
 
 
 
@@ -87,7 +88,7 @@ const Navbar = () => {
     }
   };
   const fetchurllogoimg = async () => {
-    event.preventDefault();
+ 
     // const publicid = "wall-clading_j3yzwq";
     const publicid = "WhatsApp_Image_2025-03-11_at_8.35.34_PM_bcaefw";
 
@@ -345,13 +346,33 @@ const Navbar = () => {
             {/* Hamburger Menu for mobile screens */}
             <div className="lg:hidden h-20  flex items-center justify-end text-3xl pr-5">
               <button
-                className="cursor-pointer w-max text-white focus:outline-none"
+                className="cursor-pointer w-max text-white focus:outline-none  transition duration-300 ease-in-out "
                 onClick={toggleMenu}
                 // onBlur={toggleMenu}
                 // onFocus={toggleMenu2}
               >
-                <GiHamburgerMenu />
+                {
+                  isOpen?
+                  <FaWindowClose />
+
+                  :
+                  <GiHamburgerMenu />
+                }
               </button>
+              {/* <button
+                className="cursor-pointer w-max text-white focus:outline-none  transition duration-300 ease-in-out "
+                onClick={toggleMenu}
+                // onBlur={toggleMenu}
+                // onFocus={toggleMenu2}
+              >
+                {
+                  isOpen?
+                  <FaWindowClose />
+
+                  :
+                  <GiHamburgerMenu />
+                }
+              </button> */}
             </div>
           </div>
         </div>
