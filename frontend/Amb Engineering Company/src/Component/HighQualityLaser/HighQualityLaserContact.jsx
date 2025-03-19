@@ -12,7 +12,7 @@ const HighQualityLaserContact = () => {
           className="pt-65 pl relative w-full  min-h-[70vh]  rounded-lg shadow-lg overflow-hidden bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://th.bing.com/th/id/OIP.ZOOxZ0zTO9lTIkjIFNLPCQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain')",
+              "url('https://i.pinimg.com/736x/52/57/ec/5257ec9a372a91005caab1c86b9c0c92.jpg')",
           }}
         >
           <div className="absolute top-0 left-0 opacity-60 w-full h-full bg-black"></div>
