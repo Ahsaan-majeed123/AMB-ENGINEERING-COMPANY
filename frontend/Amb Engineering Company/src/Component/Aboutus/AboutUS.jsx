@@ -44,7 +44,7 @@ const AboutUS = () => {
   }, []);
 
   return (
-    <HelmetLayout title="About US">
+    <HelmetLayout title="About US" canonicalUrl={"https://www.ambengineers.com/about-AMB-ENG-Company"}>
       <div
         className={` ${
           navbaropenCheckForBelowContainerMargin ? "mt-16" : "mt-0"

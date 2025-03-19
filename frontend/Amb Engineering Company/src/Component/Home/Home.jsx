@@ -13,18 +13,19 @@ import HelmetLayout from "../Layout/Helmet";
 import axios from "axios";
 import { stairrailingcontext } from "../Context/StairRailing4";
 
-import ScrollToTop from './../Scrolltop/ScrollToTop';
+import ScrollToTop from "./../Scrolltop/ScrollToTop";
 import { Backend_Url } from "../utils/utils";
 
 const Home = () => {
   const [imgno, setimgno] = useState(0);
 
   const [videoUrl, setvideoUrl] = useState("");
-const [showScrolltoTop, setshowScrolltoTop] = useState(false)
+  const [showScrolltoTop, setshowScrolltoTop] = useState(false);
 
-  const {navbaropenCheckForBelowContainerMargin,setnavbaropenCheckForBelowContainerMargin} = useContext(stairrailingcontext)
-
-
+  const {
+    navbaropenCheckForBelowContainerMargin,
+    setnavbaropenCheckForBelowContainerMargin,
+  } = useContext(stairrailingcontext);
 
   const img = [
     "https://th.bing.com/th/id/R.65468576adbad03282f5a55f4ba02edd?rik=%2fj9148udKx0FOw&pid=ImgRaw&r=0",
@@ -52,9 +53,9 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
       () => {
         // If the current image is a video (index 2 in this case), switch after a longer time
         // if (imgno === 2) {
-          next();  // Move to next slide after 15 seconds for video
+        next(); // Move to next slide after 15 seconds for video
         // } else {
-          // next();  // Move to next slide after 5 seconds for images
+        // next();  // Move to next slide after 5 seconds for images
         // }
       },
       // imgno === 2 ? 15000 :
@@ -65,33 +66,27 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
   }, [imgno]);
 
   useEffect(() => {
-
-    const handlescroll = ()=>{
-      if (window.scrollY>350) {
-        setshowScrolltoTop(true)
+    const handlescroll = () => {
+      if (window.scrollY > 350) {
+        setshowScrolltoTop(true);
+      } else {
+        setshowScrolltoTop(false);
       }
-      else
-      {
-        setshowScrolltoTop(false)
-      }
-    }
+    };
 
-    window.addEventListener("scroll",handlescroll)
+    window.addEventListener("scroll", handlescroll);
 
-    return ()=>{
-      window.removeEventListener("scroll",handlescroll)
-    }
+    return () => {
+      window.removeEventListener("scroll", handlescroll);
+    };
+  }, []);
 
-  }, [])
-
-
-   useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }, []);
-  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   const stringtorender = [
     "I am  <span class='text-yellow-500'>Farhan</span> Majeed...",
@@ -100,32 +95,27 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
     "I can also <span class='text-yellow-500'>make Islamic</span> make Islamic Calligraphy...",
   ];
 
-
-
   // Change Favicon
 
-
-
-  const [faviconUrl, setFaviconUrl] = useState('');
+  const [faviconUrl, setFaviconUrl] = useState("");
 
   // Fetch the favicon URL when the component mounts using axios
   useEffect(() => {
     const fetchFaviconUrl = async () => {
-      const publicid = "WhatsApp_Image_2025-03-11_at_8.35.37_PM_xvo73k"
+      const publicid = "WhatsApp_Image_2025-03-11_at_8.35.37_PM_xvo73k";
       try {
-        const response = await axios.get(
-           `${Backend_Url}/get-favicon-url`, {
-          params: { public_id: publicid },  // Pass public_id as a query param
+        const response = await axios.get(`${Backend_Url}/get-favicon-url`, {
+          params: { public_id: publicid }, // Pass public_id as a query param
         });
 
         if (response.data && response.data.url) {
           // Set the favicon URL state
           setFaviconUrl(response.data.url);
         } else {
-          console.error('Error fetching favicon URL:', response.data);
+          console.error("Error fetching favicon URL:", response.data);
         }
       } catch (error) {
-        console.error('Error fetching favicon URL with axios:', error);
+        console.error("Error fetching favicon URL with axios:", error);
       }
     };
 
@@ -140,17 +130,13 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
     }
   }, [faviconUrl]); // This will trigger when faviconUrl state changes
 
-
-
-
-
-
-
   return (
-    <HelmetLayout title="Laser Cut Machine - Amb Eng Company">
-      <div className={` 
-         ${navbaropenCheckForBelowContainerMargin?"mt-15":"mt-0"} 
-        box-border bg-gradient-to-r from-black via-gray-600  to-purple-700  h-[67vh] sm:h-[85vh] w-[99vw]`}>
+    <HelmetLayout title="Laser Cut Machine - Amb Eng Company" canonicalUrl={"https://www.ambengineers.com"}>
+      <div
+        className={` 
+         ${navbaropenCheckForBelowContainerMargin ? "mt-15" : "mt-0"} 
+        box-border bg-gradient-to-r from-black via-gray-600  to-purple-700  h-[67vh] sm:h-[85vh] w-[99vw]`}
+      >
         <div className="relative">
           {/* Image carousel */}
           <div className="relative w-full h-[57vh] sm:h-[75vh]">
@@ -196,9 +182,7 @@ const [showScrolltoTop, setshowScrolltoTop] = useState(false)
             ))}
           </div>
 
-          {
-          showScrolltoTop&&<ScrollToTop/>
-          }
+          {showScrolltoTop && <ScrollToTop />}
 
           {/* Previous Button */}
           <motion.button

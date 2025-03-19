@@ -86,7 +86,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <HelmetLayout title="Contact Us - AMB Eng Comp">
+    <HelmetLayout title="Contact Us - AMB Eng Comp" canonicalUrl={"https://www.ambengineers.com/contact"}>
       <div>
         <div
          

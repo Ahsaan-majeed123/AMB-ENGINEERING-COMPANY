@@ -38,7 +38,7 @@ const MechanicalPartsLaserCutting = () => {
   }, []);
 
   return (
-    <HelmetLayout title="Mechanical Parts - Laser Cut">
+    <HelmetLayout title="Mechanical Parts - Laser Cut" canonicalUrl={"https://www.ambengineers.com/laser-cutting-Mechanical-parts-3"}>
       <div
         className={`
         

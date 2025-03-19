@@ -14,7 +14,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTiktok } from "react-icons/fa6";
 import { Backend_Url } from "../utils/utils";
 
-const Gatedesign = () => {
+const Gatedesign = ({canonicalUrl}) => {
   const { gate14, setgate14 } = useContext(gatecontext);
   const [copygate14, setcopygate14] = useState([]);
   const category = "gate";
@@ -108,7 +108,7 @@ const Gatedesign = () => {
 
                             const {navbaropenCheckForBelowContainerMargin,setnavbaropenCheckForBelowContainerMargin} = useContext(stairrailingcontext)
   return (
-    <HelmetLayout title="Specific Stair Design - Laser Cut">
+    <HelmetLayout title="Specific Stair Design - Laser Cut" canonicalUrl={canonicalUrl}>
 
     <div  className={`bg-gradient-to-t from-gray-50 to-blue-50 bg-gray-100   py-6 ${navbaropenCheckForBelowContainerMargin?"mt-0":"mt-4"} md:py-8`}>
         

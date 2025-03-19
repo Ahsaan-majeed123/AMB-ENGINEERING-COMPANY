@@ -7,8 +7,9 @@ const HelmetLayout = ({
   description = "In this company you can cut piece from Laser Cutting Machine",
   keywords = "laser cutting,amb engineering,fiber laser cut,gate design laser cut",
   author = "Farhan Majeed",
-  ogImage = "https://images.pexels.com/photos/29988963/pexels-photo-29988963/free-photo-of-industrial-laser-cutter-in-factory-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",  // Add a default og:image
-  ogUrl = "https://amb-engineering-company.vercel.app",  // Add a default og:url
+  ogImage = "https://images.pexels.com/photos/29988963/pexels-photo-29988963/free-photo-of-industrial-laser-cutter-in-factory-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Add a default og:image
+  ogUrl = "https://amb-engineering-company.vercel.app", // Add a default og:url
+  canonicalUrl = "" // Add canonical URL prop
 }) => {
   return (
     <>
@@ -31,6 +32,11 @@ const HelmetLayout = ({
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImage} />
         <meta name="twitter:card" content="summary_large_image" />
+
+       
+
+       {/* Canonical Tag */}
+       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       </Helmet>
       <div>{children}</div>
     </>

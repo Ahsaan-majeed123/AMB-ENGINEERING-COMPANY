@@ -314,7 +314,7 @@ const { wallclading8, setwallclading8} = useContext(WallCladding8context);
           return (
             <Route key={i}
               path={`/Gate-Laser-Cut-Design-4/gate-design-${i}`}
-              element={<Gatedesign />}
+              element={<Gatedesign canonicalurl={`https://www.ambengineers.com/Gate-Laser-Cut-Design-4/gate-design-${i}`} />}
             />
           );
         })}
@@ -326,7 +326,7 @@ const { wallclading8, setwallclading8} = useContext(WallCladding8context);
           return (
             <Route key={i}
               path={`/Stair-Laser-Cut-Design-4/stair-design-${i}`}
-              element={<Stairdesign />}
+              element={<Stairdesign  canonicalurl={`https://www.ambengineers.com/Stair-Laser-Cut-Design-4/stair-design-${i}`} />}
             />
           );
         })}
@@ -343,7 +343,7 @@ const { wallclading8, setwallclading8} = useContext(WallCladding8context);
           return (
             <Route key={i}
               path={`/Wallclading-Laser-Cut-Design-8/Wallclading-design-${i}`}
-              element={<Wallcladingdesign />}
+              element={<Wallcladingdesign canonicalurl={`https://www.ambengineers.com/Wallclading-Laser-Cut-Design-8/Wallclading-design-${i}`} />}
             />
           );
         })}

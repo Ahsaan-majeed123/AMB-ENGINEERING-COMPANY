@@ -38,7 +38,7 @@ const LaserCuttingService = () => {
   }, []);
 
   return (
-    <HelmetLayout title="Laser Cut Details">
+    <HelmetLayout title="Laser Cut Details" canonicalUrl={"https://www.ambengineers.com/laser-cutting-service-1"}>
       <div
         className={`md:mt-4 mt-4  bg-gray-300  py-0 md:py-13`}
         // className={`${

@@ -13,7 +13,7 @@ import ScrollToTop from "../Scrolltop/ScrollToTop";
 import { FaTiktok } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 
-const Stairdesign = () => {
+const Stairdesign = ({canonicalUrl}) => {
 //   const { gate14, setgate14 } = useContext(gatecontext);
   const { stair4, setstair4 } = useContext(stairrailingcontext);
 
@@ -97,7 +97,7 @@ useEffect(() => {
 
       
   return (
-    <HelmetLayout title="Specific Gate Design - Laser Cut">
+    <HelmetLayout title="Specific Gate Design - Laser Cut" canonicalUrl={canonicalUrl}>
 
     <div  className={`bg-gradient-to-r from-gray-200 to-blue-100   md:mt-5 mt-3  py-13`}>
      

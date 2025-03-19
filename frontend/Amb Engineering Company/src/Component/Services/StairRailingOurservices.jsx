@@ -69,7 +69,7 @@ const StairRailingOurServices = () => {
     setnavbaropenCheckForBelowContainerMargin,
   } = useContext(stairrailingcontext);
   return (
-    <HelmetLayout title="Stair Designs - Laser Cut">
+    <HelmetLayout title="Stair Designs - Laser Cut" canonicalUrl={"https://www.ambengineers.com/StairRailingOurServices"} >
       <div
         className={`bg-gray-100 ${
           navbaropenCheckForBelowContainerMargin ? "mt-17" : "mt-0"

@@ -14,7 +14,7 @@ import { FaMessage, FaTiktok } from 'react-icons/fa6';
 import ScrollToTop from "../Scrolltop/ScrollToTop";
 import { IoLogoWhatsapp } from "react-icons/io";
 
-const Wallcladingdesign = () => {
+const Wallcladingdesign = ({canonicalUrl}) => {
 //   const { gate14, setgate14 } = useContext(gatecontext);
   const {wallclading8, setwallclading8} = useContext(WallCladding8context);
 
@@ -91,7 +91,7 @@ const Wallcladingdesign = () => {
  const {navbaropenCheckForBelowContainerMargin,setnavbaropenCheckForBelowContainerMargin} = useContext(stairrailingcontext)
 
   return (
-    <HelmetLayout title="Specific Gate Design - Laser Cut">
+    <HelmetLayout title="Specific Gate Design - Laser Cut"   canonicalUrl={canonicalUrl}>
 
     <div  
     

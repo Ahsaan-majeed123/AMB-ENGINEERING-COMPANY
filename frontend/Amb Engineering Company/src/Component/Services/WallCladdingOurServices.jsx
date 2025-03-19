@@ -140,7 +140,7 @@ const WallCladdingOurServices = () => {
     setnavbaropenCheckForBelowContainerMargin,
   } = useContext(stairrailingcontext);
   return (
-    <HelmetLayout title="Wall Cladding Designs - Laser Cut">
+    <HelmetLayout title="Wall Cladding Designs - Laser Cut" canonicalUrl={"https://www.ambengineers.com/WallCladingOurServices"}>
       <div
         // className={`bg-gray-100 md:mt-5 mt-3    py-0 md:py-13 `}
         className={`bg-gray-100 ${

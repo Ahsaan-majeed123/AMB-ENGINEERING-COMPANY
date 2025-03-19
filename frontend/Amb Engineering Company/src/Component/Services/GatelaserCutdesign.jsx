@@ -175,7 +175,7 @@ const GatelaserCutdesign = () => {
 
 
   return (
-    <HelmetLayout title="Gate Designs - Laser Cut" >
+    <HelmetLayout title="Gate Designs - Laser Cut" canonicalUrl={"https://www.ambengineers.com/Gate-Laser-Cut-Design-4"}>
 
     <div className={`$md:mt-4  mt-4 py-5 md:py-20 bg-gray-100   `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
