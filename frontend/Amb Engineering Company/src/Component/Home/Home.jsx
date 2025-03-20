@@ -32,6 +32,9 @@ const Home = () => {
 
     "https://i.ytimg.com/vi/qKmjMVjMkic/maxresdefault.jpg",
 
+
+    "./public/ceiling_and_shades_oc8lvg_page-0010.jpg",
+    
     // // Video (YouTube URL) needs the playlist parameter for looping
     // "https://www.youtube.com/embed/3lLfXX9Xu-0?",
 
@@ -179,7 +182,7 @@ const Home = () => {
                   key={index}
                   src={image}
                   alt={`carousel-${index}`}
-                  className={`absolute top-0 left-0 w-full h-full object-fill  transition-opacity duration-1000 ease-in-out ${
+                  className={`absolute top-0 left-0 w-full h-full ${index==2?"object-contain":"object-fill"}   transition-opacity duration-1000 ease-in-out ${
                     imgno === index ? "opacity-100 " : "opacity-0 "
                   }`}
                 />
@@ -189,16 +192,16 @@ const Home = () => {
           </div>
 
           {/* Carousel Dots */}
-          <div className="flex absolute bottom-4 left-[50%] transform -translate-x-1/2">
+          <div className="flex absolute bottom-2 left-[50%] transform -translate-x-1/2">
             {img.map((image, index) => (
               <div
                 key={index}
-                className={`cursor-pointer text-3xl ${
-                  imgno === index ? "text-black scale-125" : "text-white"
+                className={` cursor-pointer  text-3xl ${
+                  imgno === index ? "text-black scale-125" : "text-gray-300"
                 }`}
                 onClick={() => setimgno(index)}
               >
-                <GoDotFill />
+                <GoDotFill className="" />
               </div>
             ))}
           </div>
