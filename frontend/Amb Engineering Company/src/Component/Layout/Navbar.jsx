@@ -382,7 +382,7 @@ const Navbar = () => {
       {isOpen && (
         <div
           
-        className={`lg:hidden fixed z-20 bg-gradient-to-br from-gray-950 to-purple-700/80 top-20 p-2 box-border shadow-lg w-full 
+        className={`lg:hidden fixed z-20 bg-gradient-to-br from-gray-700 to-gray-900/80 top-20 p-2 box-border shadow-lg w-full 
          
           `}
  
