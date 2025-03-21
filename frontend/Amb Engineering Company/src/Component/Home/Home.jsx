@@ -33,7 +33,7 @@ const Home = () => {
     "https://i.ytimg.com/vi/qKmjMVjMkic/maxresdefault.jpg",
 
 
-    "./public/ceiling_and_shades_oc8lvg_page-0010.jpg",
+    "./ceiling_and_shades_oc8lvg_page-0010.jpg",
     
     // // Video (YouTube URL) needs the playlist parameter for looping
     // "https://www.youtube.com/embed/3lLfXX9Xu-0?",
