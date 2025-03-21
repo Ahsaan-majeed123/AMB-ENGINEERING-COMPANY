@@ -28,9 +28,9 @@ const Home = () => {
   } = useContext(stairrailingcontext);
 
   const img = [
-    "https://th.bing.com/th/id/R.65468576adbad03282f5a55f4ba02edd?rik=%2fj9148udKx0FOw&pid=ImgRaw&r=0",
+    "./stairdesign.jpg",
 
-    "https://i.ytimg.com/vi/qKmjMVjMkic/maxresdefault.jpg",
+    "./Fiber-Laser-Cutting-2.jpg",
 
 
     "./ceiling_and_shades_oc8lvg_page-0010.jpg",
@@ -40,7 +40,7 @@ const Home = () => {
 
     "https://th.bing.com/th/id/R.c6e52ee5b3391e77f45841d1d24a19cc?rik=76pKm7LYMBV8Pw&pid=ImgRaw&r=0",
 
-    "https://th.bing.com/th/id/R.76aa78feaaca15541ad21e9c6217dee9?rik=aEA1UrnBT4Ct1A&pid=ImgRaw&r=0",
+    "./laser.jpg",
   ];
 
   const prev = () => {
