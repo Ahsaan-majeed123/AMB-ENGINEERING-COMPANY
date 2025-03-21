@@ -69,7 +69,7 @@ const Home = () => {
         // }
       },
       // imgno === 2 ? 15000 :
-      4000000
+      4000
     ); // 15 seconds for video, 5 seconds for images
 
     return () => clearInterval(interval);
@@ -222,8 +222,8 @@ const Home = () => {
             {img.map((image, index) => (
               <div
                 key={index}
-                className={` cursor-pointer  text-3xl ${
-                  imgno === index ? "text-black scale-125" : "text-gray-300"
+                className={` cursor-pointer  text-2xl ${
+                  imgno === index ? "text-black scale-130" : "text-gray-300"
                 }`}
                 onClick={() => setimgno(index)}
               >
