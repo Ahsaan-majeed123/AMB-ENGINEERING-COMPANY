@@ -46,14 +46,15 @@ const OurMission = () => {
       className="bg-amber-50 py-16"
       style={{
         backgroundImage:
-          "url('/pattern6.png'),url('/pattern10.png')",
+          "url('/pattern6.png'),url('/pattern4.png')",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "right top,  bottom left", // Corrected positions
-        backgroundSize: "230px 230px, 255px 180px,235px 180px", // Resizing images
+        backgroundPosition: "right top,  center left", // Corrected positions
+        backgroundSize: "230px 230px, 235px 320px,215px 180px", // Resizing images
         
       }}
     >
-      <div className=" flex flex-col bg-gradient-to-bl from-amber-100 to-white md:flex-row gap-8 max-w-7xl mx-auto px-4 border-t-4 pt-5 border-b-4 border-amber-600 rounded-lg shadow-xl">
+      <div
+       className=" flex flex-col bg-gradient-to-bl from-amber-100 to-white md:flex-row gap-8 max-w-7xl mx-auto px-4 border-t-4 pt-5 border-b-4 border-amber-600 rounded-lg shadow-xl">
         {/* Image Section */}
         <div className="relative  w-full sm:w-[50%] md:w-[38%] mx-auto overflow-hidden rounded-lg shadow-lg  h-max">
           <img
