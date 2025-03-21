@@ -28,19 +28,26 @@ const Home = () => {
   } = useContext(stairrailingcontext);
 
   const img = [
-    "./stairdesign.jpg",
-
-    "./Fiber-Laser-Cutting-2.jpg",
+     "https://th.bing.com/th/id/R.c6e52ee5b3391e77f45841d1d24a19cc?rik=76pKm7LYMBV8Pw&pid=ImgRaw&r=0",
+    "./design.jpg",
 
 
     "./ceiling_and_shades_oc8lvg_page-0010.jpg",
+    "./Fiber-Laser-Cutting-2.jpg",
+
+
     
     // // Video (YouTube URL) needs the playlist parameter for looping
     // "https://www.youtube.com/embed/3lLfXX9Xu-0?",
 
-    "https://th.bing.com/th/id/R.c6e52ee5b3391e77f45841d1d24a19cc?rik=76pKm7LYMBV8Pw&pid=ImgRaw&r=0",
-
     "./laser.jpg",
+   
+
+
+    "./isl2.jpg",
+    "./isl.jpg"
+
+    
   ];
 
   const prev = () => {
