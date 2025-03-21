@@ -87,26 +87,26 @@ const Navbar = () => {
       alert("Failed to fetch the PDF URL. Please try again.");
     }
   };
-  const fetchurllogoimg = async () => {
+  // const fetchurllogoimg = async () => {
  
-    // const publicid = "wall-clading_j3yzwq";
-    const publicid = "WhatsApp_Image_2025-03-11_at_8.35.34_PM_bcaefw";
+  //   // const publicid = "wall-clading_j3yzwq";
+  //   const publicid = "WhatsApp_Image_2025-03-11_at_8.35.34_PM_bcaefw";
 
-    try {
-      const res = await axios.get(
-        `${Backend_Url}/get-img-url`,
-        // "http://localhost:8086/api/userEmail/get-img-url",
-        {
-          params: { public_id: publicid },
-        }
-      );
-      setlogourl(res.data.url);
-      // window.open(res.data.url, "_blank"); // Open the PDF automatically
-    } catch (error) {
-      console.error("Error fetching the PDF URL:", error);
-      alert("Failed to fetch the PDF URL. Please try again.");
-    }
-  };
+  //   try {
+  //     const res = await axios.get(
+  //       `${Backend_Url}/get-img-url`,
+  //       // "http://localhost:8086/api/userEmail/get-img-url",
+  //       {
+  //         params: { public_id: publicid },
+  //       }
+  //     );
+  //     setlogourl(res.data.url);
+  //     // window.open(res.data.url, "_blank"); // Open the PDF automatically
+  //   } catch (error) {
+  //     console.error("Error fetching the PDF URL:", error);
+  //     alert("Failed to fetch the PDF URL. Please try again.");
+  //   }
+  // };
 
   useEffect(() => {
     fetchurllogoimg();
@@ -176,7 +176,7 @@ const Navbar = () => {
             <div className="w-15  mb-1  ml-6 md:w-15 cursor-pointer rounded-full border-4 border-white shadow-lg">
               <img
                 className="w-15 md:w-17 rounded-full"
-                src={logourl}
+                src={'./logo.jpg'}
                 // src="https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg"
                 alt="Logo"
                 title="AMB ENG COMPANY"

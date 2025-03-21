@@ -14,36 +14,36 @@ const Footer = () => {
 
   const [logourl, setlogourl] = useState("")
 
-  const fetchurllogoimg2 = async () => {
-      // const publicid = "wall-clading_j3yzwq";
-      const publicid = "WhatsApp_Image_2025-03-11_at_8.35.37_PM_xvo73k";
+  // const fetchurllogoimg2 = async () => {
+  //     // const publicid = "wall-clading_j3yzwq";
+  //     const publicid = "WhatsApp_Image_2025-03-11_at_8.35.37_PM_xvo73k";
   
-      try {
-        const res = await axios.get(
-          `${Backend_Url}/get-img-url`,
-          // "http://localhost:8086/api/userEmail/get-img-url",
-          {
-            params: { public_id: publicid },
-          }
-        );
-        setlogourl(res.data.url);
-        // window.open(res.data.url, "_blank"); // Open the PDF automatically
-      } catch (error) {
-        console.error("Error fetching the PDF URL:", error);
-        alert("Failed to fetch the PDF URL. Please try again.");
-      }
-    };
+  //     try {
+  //       const res = await axios.get(
+  //         `${Backend_Url}/get-img-url`,
+  //         // "http://localhost:8086/api/userEmail/get-img-url",
+  //         {
+  //           params: { public_id: publicid },
+  //         }
+  //       );
+  //       setlogourl(res.data.url);
+  //       // window.open(res.data.url, "_blank"); // Open the PDF automatically
+  //     } catch (error) {
+  //       console.error("Error fetching the PDF URL:", error);
+  //       alert("Failed to fetch the PDF URL. Please try again.");
+  //     }
+  //   };
   
-    useEffect(() => {
-      fetchurllogoimg2();
-    }, []);
+  //   useEffect(() => {
+  //     fetchurllogoimg2();
+  //   }, []);
   return (
     <div className="mt-9 bg-gray-800 text-white py-8">
       <div className=" px-4 flex flex-col space-y-2 space-x-1 justify-center items-center   md:flex-row max-w-7xl mx-auto">
         <Link to="/">
         <img
           // src="https://m.media-amazon.com/images/I/51YJsBTSFSL.jpg"
-          src= {logourl}
+          src= {'./logo2.jpg'}
           className="rounded-full   object-fill  w-40 h-40  border border-8 border-black sm:w-55 md:w-65 lg:w-58 xl:w-60 sm:h-55"
           
           alt="My logo for amb engineering company and go to home"
