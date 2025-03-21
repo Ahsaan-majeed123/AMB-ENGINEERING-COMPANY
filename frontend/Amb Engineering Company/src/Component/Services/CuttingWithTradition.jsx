@@ -25,7 +25,7 @@ const CuttingWithTradition = () => {
       // }}
       
       >
-        <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto px-4 border-b-8  pt-6 pb-16 border-amber-400">
+        <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto px-4 border-b-8  pt-6 pb-36 border-amber-400">
           <div className="relative w-[50%] ml-auto mr-auto sm:w-[50%] sm:ml-auto sm:mr-auto  md:w-[40%]  ">
             <img
               src="https://www.harrodhorticultural.com/uploads/images/products/ARC-854_Harrod_Laser_Screen_Panels_1.jpg"
