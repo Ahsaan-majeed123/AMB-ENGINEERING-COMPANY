@@ -38,7 +38,7 @@ const Counterup = () => {
                 <CountUp
                   className="text-4xl text-white font-extrabold"
                   start={0}
-                  end={100}
+                  end={991}
                   duration={2}
                 />
               )}
@@ -56,7 +56,7 @@ const Counterup = () => {
                 <CountUp
                   className="text-4xl text-white font-extrabold"
                   start={0}
-                  end={140}
+                  end={1040}
                   duration={2}
                 />
               )}
@@ -74,7 +74,7 @@ const Counterup = () => {
                 <CountUp
                   className="text-4xl text-white font-extrabold"
                   start={0}
-                  end={190}
+                  end={990}
                   duration={2}
                 />
               )}
@@ -91,7 +91,7 @@ const Counterup = () => {
             {
 
 countOn && 
-<CountUp className="text-4xl text-white font-extrabold" start={0} end={90} duration={2} />
+<CountUp className="text-4xl text-white font-extrabold" start={0} end={473} duration={2} />
  }
               <span className="text-2xl text-white font-semibold">+</span>
             </div>
