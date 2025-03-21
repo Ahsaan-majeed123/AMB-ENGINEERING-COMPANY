@@ -5,8 +5,27 @@ import { motion } from "framer-motion";
 const CuttingWithTradition = () => {
   return (
     <>
-      <div className="bg-gradient-to-tr from-gray-400/30  to-blue-200 py-7">
-        <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto px-4 border-t-4 border-b-4 pt-6 pb-16 border-gray-400/70">
+      <div className=" bg-amber-50 py-7"
+     style={{ 
+      backgroundImage: "url('/pattern4.png'), url('/pattern6.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "400px 300px,200px 200px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, right bottom",  
+      backgroundAttachment: "scroll",  
+    }}
+    
+      
+      
+      // style={{
+    
+      //   backgroundImage: "url('/up_right.png'), url('/des_bot_left-removebg-preview.png'),url('/up-left.png'),url('/down-right.png')",
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundPosition: "right top,  bottom left,left top, bottom right", // Corrected positions
+      //   backgroundSize: "150px 170px, 135px 90px,105px 170px,130px 75px", // Resizing images
+      // }}
+      
+      >
+        <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto px-4 border-b-8  pt-6 pb-16 border-amber-400">
           <div className="relative w-[50%] ml-auto mr-auto sm:w-[50%] sm:ml-auto sm:mr-auto  md:w-[40%]  ">
             <img
               src="https://www.harrodhorticultural.com/uploads/images/products/ARC-854_Harrod_Laser_Screen_Panels_1.jpg"

@@ -12,8 +12,8 @@ const MaterialWeCanCut = () => {
 
   return (
     <>
-      <div className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-lg ">
+      <div className="bg-amber-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg ">
           {/* Title Section */}
           <div className="text-center pt-4 mb-8 ">
             <motion.div

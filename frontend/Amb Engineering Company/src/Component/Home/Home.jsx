@@ -69,7 +69,7 @@ const Home = () => {
         // }
       },
       // imgno === 2 ? 15000 :
-      4000
+      4000000
     ); // 15 seconds for video, 5 seconds for images
 
     return () => clearInterval(interval);
@@ -162,12 +162,31 @@ const Home = () => {
   }, [faviconUrl]); // This will trigger when faviconUrl state changes
 
   return (
+    // bg-gradient-to-r from-black via-gray-600  to-purple-700
+
     <HelmetLayout title="Laser Cut Machine - Amb Eng Company" canonicalUrl={"https://www.ambengineers.com"}>
-      <div
-        className={` 
-         ${navbaropenCheckForBelowContainerMargin ? "mt-15" : "mt-0"} 
-        box-border bg-gradient-to-r from-black via-gray-600  to-purple-700  h-[67vh] sm:h-[85vh] w-[99vw]`}
-      >
+  <div
+  style={{
+    
+    backgroundImage: "url('/up_right.png'), url('/des_bot_left-removebg-preview.png'),url('/up-left.png'),url('/down-right.png')",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "right top,  bottom left,left top, bottom right", // Corrected positions
+    backgroundSize: "150px 170px, 135px 90px,105px 170px,130px 75px", // Resizing images
+  }}
+  className={` 
+    bg-amber-50
+    border-b-3 border-amber-300
+    
+    ${navbaropenCheckForBelowContainerMargin ? "mt-15" : "mt-0"} 
+    box-border 
+    h-[67vh] sm:h-[86vh] w-[99vw]`}
+>
+
+
+
+
+
+
         <div className="relative">
           {/* Image carousel */}
           <div className="relative w-full h-[57vh] sm:h-[75vh]">
@@ -199,7 +218,7 @@ const Home = () => {
           </div>
 
           {/* Carousel Dots */}
-          <div className="flex absolute bottom-2 left-[50%] transform -translate-x-1/2">
+          <div className="flex absolute bottom-0 left-[50%] transform -translate-x-1/2">
             {img.map((image, index) => (
               <div
                 key={index}
@@ -240,7 +259,7 @@ const Home = () => {
 
         {/* Typed Text Section */}
         <motion.div
-          className="mt-1 bottom-0 left-1/2 text-white text-2xl sm:text-2xl   max-w-80 md:w-max  text-center font-semibold  mx-auto"
+          className="mt-1 bottom-0 left-1/2 text-black text-xl sm:text-2xl   md:max-w-90 sm:max-w-87 max-w-80 md:w-200   text-center font-semibold  mx-auto font-sec"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

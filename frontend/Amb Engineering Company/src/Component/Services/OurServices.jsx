@@ -90,8 +90,21 @@ const OurServices = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-tr from-red-500/80 via-yellow-100/50 to-blue-300">
-        <div className="max-w-7xl overflow-hidden  mx-auto px-4 py-12 pb-30 ">
+    {/* bg-gradient-to-tr from-red-500/80 via-yellow-100/50 to-blue-300 */}
+      <div className="bg-gradient-to-b from-amber-50 via-amber-200   to-amber-50 shadow-2xl"
+      
+      
+      
+      // style={{ 
+      //   backgroundImage: "url('/pattern13.png')",
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",  // Ensures the image covers the entire div
+      //   backgroundPosition: "100px top",  // Centers the image
+      //   backgroundSize: "200px 200px",
+      //   backgroundAttachment: "scroll", // Optional: Keeps background fixed on scroll
+      // }}
+      >
+        <div className="max-w-7xl overflow-hidden w-full  mx-auto px-4 py-12 pb-30 ">
           <motion.div
             initial={{ opacity: 0, scale:1.5, x: -50 }}
             whileInView={{ opacity: 1,scale:1,  x: 0 }}
@@ -119,14 +132,19 @@ const OurServices = () => {
                         index==2?"Wall Cladding PDF":index==5?"Stair Railing PDF":index==0?"": `${product.TITLE_For_hover}`
                       }
                     >
-                      <img
+                      
+                      <motion.img
+ initial={{ opacity: 0, y:-40 }}
+ whileInView={{ opacity: 1,y : 0 }}
+ transition={{ duration: 0.2 }}
+                     
                         className="w-full hover:-translate-y-5  h-64 object-fill rounded-lg transition duration-300 ease-in-out"
                         src={product.imge}
                         alt={`Service ${index + 1}`}
                       />
 
                       <div
-                        className="p-3 font-bold text-center absolute bottom-0 w-full bg-green-300 text-xl"
+                        className="p-3 -tracking-wide font-sans font-bold text-center absolute bottom-0 w-full bg-amber-500 text-xl"
                         dangerouslySetInnerHTML={{ __html: product.title }}
                       />
                     </div>

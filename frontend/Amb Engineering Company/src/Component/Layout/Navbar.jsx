@@ -167,7 +167,7 @@ const Navbar = () => {
     <div>
       {/* Navbar Container */}
       {/* <div className="fixed border border-8 left-0 right-0 top-0 z-1000 bg-gradient-to-r from-blue-500 to-purple-600 p-2 pb-4 md:pb-2 w-[100%]  shadow-lg box-border "> */}
-      <div className={`fixed pt-1 pb-1  left-0 right-0 top-0 z-20 max-h-20 bg-gradient-to-br from-black via-gray-850  to-purple-700 shadow-sm box-border w-full  shadow-gray-600`}>
+      <div className={`fixed pt-1 pb-1  left-0 right-0 top-0 z-20 max-h-20 bg-black shadow-sm box-border w-full  shadow-gray-600`}>
         {/* Logo and Navigation Section */}
 
         <div className="w-full  box-border flex justify-between  items-center">
