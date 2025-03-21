@@ -108,9 +108,9 @@ const Navbar = () => {
   //   }
   // };
 
-  useEffect(() => {
-    fetchurllogoimg();
-  }, []);
+  // useEffect(() => {
+  //   fetchurllogoimg();
+  // }, []);
 
   const toggleMenu = () => {
     // console.log("jjj");

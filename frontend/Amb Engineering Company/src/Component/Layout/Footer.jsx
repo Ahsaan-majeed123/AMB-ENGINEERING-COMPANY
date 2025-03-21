@@ -44,7 +44,7 @@ const Footer = () => {
         <img
           // src="https://m.media-amazon.com/images/I/51YJsBTSFSL.jpg"
           src= {'./logo2.jpg'}
-          className="rounded-full   object-fill  w-40 h-40  border border-8 border-black sm:w-55 md:w-65 lg:w-58 xl:w-60 sm:h-55"
+          className="rounded-full   object-fill  w-40 h-40   sm:w-55 md:w-65 lg:w-58 xl:w-60 sm:h-55"
           
           alt="My logo for amb engineering company and go to home"
         />
