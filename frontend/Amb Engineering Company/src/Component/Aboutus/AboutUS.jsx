@@ -102,13 +102,13 @@ const AboutUS = () => {
 
           <div className="relative w-[50%] ml-auto mr-auto sm:w-[50%] sm:ml-auto sm:mr-auto  md:w-[40%] mb-13 ">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPJ0z_2mVeZYkQfdMw1g9FBORKswdrU9ECk1M6487tNG5knkXESD8kxO2mmdhDEKVTaI&usqp=CAU"
+              src="./lasercutting.jpg"
               alt="Laser Cutting Image"
               className="w-full h-auto object-fill  rounded-lg shadow-xl"
             />
             <div className="absolute bottom-[-40px] right-0  w-[80%] md:w-[70%] md:transform   border-6 border-yellow-500  rounded-lg overflow-hidden shadow-lg ">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkeHu6Mcf3LsnEa5KIO9rGITSZkjqqm8vWHw&s"
+                src="./lasercutting2.jpg"
                 alt="Cutting Service Image"
                 className="w-full h-auto "
               />

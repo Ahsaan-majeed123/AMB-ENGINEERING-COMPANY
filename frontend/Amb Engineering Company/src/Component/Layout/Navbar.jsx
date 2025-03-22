@@ -64,7 +64,7 @@ const Navbar = () => {
     },
     {
       name: "Windows",
-      publicidd: "WINDOWS_wfewbp",
+      publicidd: "Windows_wiyoxa",
     },
   ];
 
@@ -299,7 +299,7 @@ const Navbar = () => {
 
                 {hoverdropdowncatelogue && (
                   <div className="
-                  overflow-y-auto  font-medium text-sm lg:text-xl w-40 border md:w-62 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800  fixed top-14  ">
+                  overflow-y-auto h-[68vh]  font-medium text-sm lg:text-xl w-40 border md:w-62 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800  fixed top-14  ">
                   {/* <div className="absolute h-[78vh] overflow-y-auto top-13 font-semibold md:top-19 left-0 text-sm lg:text-xl w-40 border md:w-67 mt-1 border-gray-300 shadow-2xs  bg-white text-gray-800   z-10"> */}
                     <ul className="space-y-2">
                       {cateloguedownloadlist.map((p, i) => (

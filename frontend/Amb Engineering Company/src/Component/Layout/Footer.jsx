@@ -98,33 +98,35 @@ const Footer = () => {
       </div>
 
       {/* Newsletter Section */}
-      <div className="bg-gray-900 text-center py-6 mt-10">
-        <p className="text-lg font-semibold mb-4">Subscribe to Our Newsletter</p>
-        <form onSubmit={handleSubmit} className="flex justify-center items-center space-x-2">
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="bg-white p-2 rounded-lg text-black"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button
-            type="submit"
-            disabled={loading}
-            className="bg-blue-500 text-white px-6 py-2 rounded-lg"
-          >
-            {loading ? <p>Sending...</p> : <p>Subscribe</p>}
-          </button>
-        </form>
+<div className="bg-gray-900 text-center py-7 mt-10 rounded-lg shadow-lg">
+  <p className="text-3xl font-semibold text-white mb-6">Subscribe To Our Newsletter</p>
+  
+  <form onSubmit={handleSubmit} className="flex justify-center items-center space-x-4 md:space-x-6 max-w-lg mx-auto">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      className="bg-white p-3 rounded-lg text-black text-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+      required
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+    />
+    
+    <button
+      type="submit"
+      disabled={loading}
+      className="cursor-pointer bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+    >
+      {loading ? <span>Sending...</span> : <span>Subscribe</span>}
+    </button>
+  </form>
 
-        
-        {messageSent && (
-          <div className="text-center text-xl font-bold mt-5">
-            <p>Your Message Was Sent! Thanks</p>kkkkk
-          </div>
-        )}
-      </div>
+  {messageSent && (
+    <div className="text-center text-xl font-bold text-white mt-6">
+      <p>Your email has been received! Thank you for subscribing.</p>
+    </div>
+  )}
+</div>
+
 
       {/* Social Media Icons */}
       <div className="bg-gray-800 py-6">

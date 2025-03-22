@@ -58,7 +58,7 @@ const OurMission = () => {
         {/* Image Section */}
         <div className="relative  w-full sm:w-[50%] md:w-[38%] mx-auto overflow-hidden rounded-lg shadow-lg  h-max">
           <img
-            src="https://www.qalamcraft.com/wp-content/uploads/2024/05/new_e6aa22f7-0bc9-4e6c-a6e6-2f8f40a628a3.png"
+            src="./ourmissiongate.png"
             alt="Laser Cutting Image"
             className="border-6 border-amber-600 w-[79vw] sm:w-full sm:h-[80vh] mx-auto h-[60vh] rounded-lg shadow-xl"
           />
@@ -66,7 +66,7 @@ const OurMission = () => {
           {/* left-1/2 transform -translate-x-1/2   w-[80%] md:w-[70%] md:transform */}
           <div className="absolute bottom-0 left-1/2  transform translate-x-1       border-4 border-white  rounded-xl   shadow-lg ">
             <img
-              src="https://ptlaser.com/wp-content/uploads/2020/10/What-is-laser-cutting-MI-metal-fabrication-services.jpg"
+              src="./ourmission2.jpg"
               alt="Cutting Service Image"
               className="w-full  h-auto"
             />
