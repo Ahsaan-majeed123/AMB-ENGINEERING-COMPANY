@@ -1,108 +1,158 @@
-import React, { useEffect, useState } from "react";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaFacebook, FaLinkedin, FaYoutube, FaTwitter, FaTiktok } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import axios from "axios";
+import { Link } from "react-router-dom";
 import { Backend_Url } from "../utils/utils";
-import { Link, NavLink } from 'react-router-dom';
-
+import axios from 'axios';
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [messageSent, setMessageSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const [logourl, setlogourl] = useState("")
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  // const fetchurllogoimg2 = async () => {
-  //     // const publicid = "wall-clading_j3yzwq";
-  //     const publicid = "WhatsApp_Image_2025-03-11_at_8.35.37_PM_xvo73k";
-  
-  //     try {
-  //       const res = await axios.get(
-  //         `${Backend_Url}/get-img-url`,
-  //         // "http://localhost:8086/api/userEmail/get-img-url",
-  //         {
-  //           params: { public_id: publicid },
-  //         }
-  //       );
-  //       setlogourl(res.data.url);
-  //       // window.open(res.data.url, "_blank"); // Open the PDF automatically
-  //     } catch (error) {
-  //       console.error("Error fetching the PDF URL:", error);
-  //       alert("Failed to fetch the PDF URL. Please try again.");
-  //     }
-  //   };
-  
-  //   useEffect(() => {
-  //     fetchurllogoimg2();
-  //   }, []);
+    setLoading(true);
+
+    try {
+      const result = await axios.post(
+        `${Backend_Url}/newsletteremail`,
+        { email },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (result.data.success) {
+        setMessageSent(true);
+        setEmail(""); // Clear the input field after submission
+        // toast.success(result.data.message); // Show success message
+      } else {
+        toast.error(result.data.message);
+      }
+    } catch (error) {
+      // toast.error(
+      //   "There was an error sending the message. Please try again later."
+      // // );
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    // toast.configure();
+  }, []);
+
   return (
     <div className="mt-9 bg-gray-800 text-white py-8">
-      <div className=" px-4 flex flex-col space-y-2 space-x-1 justify-center items-center   md:flex-row max-w-7xl mx-auto">
-        <Link to="/">
-        <img
-          // src="https://m.media-amazon.com/images/I/51YJsBTSFSL.jpg"
-          src= {'./logo2.jpg'}
-          className="rounded-full   object-fill  w-40 h-40   sm:w-55 md:w-65 lg:w-58 xl:w-60 sm:h-55"
-          
-          alt="My logo for amb engineering company and go to home"
-        />
-        </Link>
-
-        <div className=" text-center  w-full  md:w-[55vw]">
-          <h2 className="text-2xl font-semibold mb-4">
-          AMB Engineering Engineering Company
-          </h2>
-          <div className="text-lg mb-1">
-            <strong>Our Address: </strong> <br />
-            T No, 4 Near Coca-Cola Wearhouse Sandha Lahore, Punjab
-          </div>
-          <div className="text-lg mb-4">
-            <strong>Opening Hours:</strong>
-            <br />
-            Monday to Saturday: 9:00 AM - 6:00 PM
-            <br />
-            Sunday: Closed
-          </div>
+      <div className="px-6 md:px-12 lg:px-24 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Logo Section */}
+        <div className="text-center md:text-left">
+          <Link to="/">
+            <img
+              src="./blacklogo.jpg"
+              alt="AMB Engineering Company Logo"
+              className="rounded-full object-fill w-32 h-32 mx-auto md:mx-0"
+            />
+          </Link>
         </div>
 
-      <div className=" gap-3 mb-3  text-white text-2xl sm:text-xl md:text-3xl   w-full flex justify-center  md:w-[25vw] overflow-auto  ">
-          <a  href="https://www.facebook.com/farhanbajwa.g/"  target="_blank" title="My Facebook" className="cursor-pointer  hover:text-red-400">
+        {/* Quick Links Section */}
+        <div>
+          <p className="text-lg font-semibold text-center md:text-left mb-4">Quick Links</p>
+          <ul className="space-y-2">
+            <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
+            <li><Link to="/about-AMB-ENG-Company" className="hover:text-blue-500">About Us</Link></li>
+            <li><Link to="/contact" className="hover:text-blue-500">Contact</Link></li>
+            <li><Link to="https://www.ambengineers.com/sitemap.xml" target="_blank" className="hover:text-blue-500">Sitemap</Link></li>
+          </ul>
+        </div>
+
+        {/* Services Section */}
+        <div>
+          <p className="text-lg font-semibold text-center md:text-left mb-4">Our Services</p>
+          <ul className="space-y-2">
+            <li><Link to="/laser-cutting-service-1" className="hover:text-blue-500">Laser Cutting Service</Link></li>
+            <li><Link to="/laser-cutting-Mechanical-parts-3" className="hover:text-blue-500">Mechanical Parts</Link></li>
+            <li><Link to="/Gate-Laser-Cut-Design-4" className="hover:text-blue-500">Gate Laser Cut Design</Link></li>
+            <li><Link to="/StairRailingOurServices" className="hover:text-blue-500">Stair Railing Services</Link></li>
+            <li><Link to="/WallCladingOurServices" className="hover:text-blue-500">Wall Cladding Services</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact Information Section */}
+        <div>
+          <p className="text-lg font-semibold text-center md:text-left mb-4">Contact Information</p>
+          <ul className="space-y-2">
+            <li>Phone: +92 304 4681357</li>
+            <li>Email: farhanbajwa418@gmail.com</li>
+            <li>Address: T No, 4 Near Coca-Cola Wearhouse Sandha Lahore</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Newsletter Section */}
+      <div className="bg-gray-900 text-center py-6 mt-10">
+        <p className="text-lg font-semibold mb-4">Subscribe to Our Newsletter</p>
+        <form onSubmit={handleSubmit} className="flex justify-center items-center space-x-2">
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="bg-white p-2 rounded-lg text-black"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button
+            type="submit"
+            disabled={loading}
+            className="bg-blue-500 text-white px-6 py-2 rounded-lg"
+          >
+            {loading ? <p>Sending...</p> : <p>Subscribe</p>}
+          </button>
+        </form>
+
+        
+        {messageSent && (
+          <div className="text-center text-xl font-bold mt-5">
+            <p>Your Message Was Sent! Thanks</p>kkkkk
+          </div>
+        )}
+      </div>
+
+      {/* Social Media Icons */}
+      <div className="bg-gray-800 py-6">
+        <div className="flex justify-center space-x-6">
+          <a href="https://www.facebook.com/farhanbajwa.g/" target="_blank" className="text-2xl hover:text-red-500" title="Facebook">
             <FaFacebook />
           </a>
-          <a href="https://www.tiktok.com/@amb_eng?_t=ZS-8uZd9AtMHlX&_r=1" target="_blank" title="My Tiktok" className="cursor-pointer hover:text-red-400">
+          <a href="https://www.tiktok.com/@amb_eng?_t=ZS-8uZd9AtMHlX&_r=1" target="_blank" className="text-2xl hover:text-red-500" title="TikTok">
             <FaTiktok />
           </a>
-          <a href="https://wa.me/923044681357?text=Assalam-u-Alaikum!" target="_blank" title="My Whatsapp" className="cursor-pointer hover:text-red-400">
+          <a href="https://wa.me/923044681357?text=Assalam-u-Alaikum!" target="_blank" className="text-2xl hover:text-green-500" title="WhatsApp">
             <IoLogoWhatsapp />
           </a>
-          <div title="Coming Soon.." className="cursor-pointer hover:text-red-400">
+          <a href="https://www.linkedin.com" target="_blank" className="text-2xl hover:text-blue-500" title="LinkedIn">
+            <FaLinkedin />
+          </a>
+          <a href="https://twitter.com" target="_blank" className="text-2xl hover:text-blue-500" title="Twitter">
             <FaTwitter />
-          </div>
+          </a>
         </div>
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* Footer Bottom */}
-      <div className="bg-gray-900 text-center py-6 mt-10">
+      <div className="bg-gray-900 text-center py-4 mt-10">
         <p className="text-sm text-gray-400">
-          &copy; 2025 AMB Engineering Company. All rights reserved.
+          © {new Date().getFullYear()} AMB Engineering Company. All Rights Reserved.
         </p>
       </div>
-
     </div>
   );
 };
