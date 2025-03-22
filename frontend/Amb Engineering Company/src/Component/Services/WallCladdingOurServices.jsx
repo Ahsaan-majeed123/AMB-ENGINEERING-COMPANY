@@ -142,6 +142,13 @@ const WallCladdingOurServices = () => {
   return (
     <HelmetLayout title="Wall Cladding Designs - Laser Cut" canonicalUrl={"https://www.ambengineers.com/WallCladingOurServices"}>
       <div
+      style={{ 
+        backgroundImage: "url('/pattern14.png'), url('/pattern16.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "60px 60px,180px 180px",  //  Corrected size format (no comma)
+        backgroundPosition: "10px 400px, right bottom",  
+        backgroundAttachment: "scroll",  
+      }}
         // className={`bg-gray-100 md:mt-5 mt-3    py-0 md:py-13 `}
         className={`bg-gray-100 ${
           navbaropenCheckForBelowContainerMargin ? "mt-17" : "mt-0"

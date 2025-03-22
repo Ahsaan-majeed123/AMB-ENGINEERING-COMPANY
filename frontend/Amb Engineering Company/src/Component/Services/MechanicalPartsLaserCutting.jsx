@@ -40,6 +40,7 @@ const MechanicalPartsLaserCutting = () => {
   return (
     <HelmetLayout title="Mechanical Parts - Laser Cut" canonicalUrl={"https://www.ambengineers.com/laser-cutting-Mechanical-parts-3"}>
       <div
+      
         className={`
         
          bg-gradient-to-l  from-gray-100 to-blue-100
@@ -117,10 +118,16 @@ const MechanicalPartsLaserCutting = () => {
         </div>
 
         {/* Section 2 */}
-        <div className="mt-10 bg-gray-300 pt-13 pb-10">
-          <div className="pl-3 pr-3  border-box max-w-7xl mx-auto flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-12">
+        <div style={{ 
+      backgroundImage: "url('/pattern14.png'), url('/pattern19.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "70px 70px,300px 300px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, 650px bottom",  
+      backgroundAttachment: "scroll",  
+    }} className="mt-10 bg-gray-300 pt-13 pb-10">
+          <div  className="pl-3 pr-3  border-box max-w-7xl mx-auto flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-12">
             {/* Content Section */}
-            <div className="flex  flex-col space-y-4 lg:w-2/3 overflow-hidden">
+            <div  className="flex  flex-col space-y-4 lg:w-2/3 overflow-hidden">
               <motion.h1
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}

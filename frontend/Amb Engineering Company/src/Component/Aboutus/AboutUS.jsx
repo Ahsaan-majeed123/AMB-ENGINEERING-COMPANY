@@ -46,7 +46,15 @@ const AboutUS = () => {
   return (
     <HelmetLayout title="About US" canonicalUrl={"https://www.ambengineers.com/about-AMB-ENG-Company"}>
       <div
-        className={` ${
+      style={{
+        backgroundImage:
+        "url('/pattern14.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "10px 6px", // Corrected positions
+      backgroundSize: "70px 60px", // Resizing images
+      
+      }}
+        className={`bg-blue-50 ${
           navbaropenCheckForBelowContainerMargin ? "mt-16" : "mt-0"
         }`}
       >
@@ -81,7 +89,14 @@ const AboutUS = () => {
         {showScrolltoTop && <ScrollToTop />}
 
         {/* About Us Content Section */}
-        <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-8">
+        <div  style={{ 
+      backgroundImage: "url('/pattern4.png'), url('/pattern8.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "400px 300px,100px 100px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, right bottom",  
+      backgroundAttachment: "scroll",  
+    }}
+         className="  max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-8">
           {/* Image Section */}
           {/* <div className="flex-1 mb-6 md:mb-0"> */}
 
@@ -125,7 +140,7 @@ const AboutUS = () => {
               initial={{ opacity: 0, scale: 1.5, x: -40 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
-              className="mb-4 text-lg"
+              className="mb-4 text-lg font-sec leading-loose"
             >
               <strong>AMB Engineering Company</strong> introduced laser cutting
               technology in Lahore with the mission of delivering top-notch
@@ -181,13 +196,18 @@ const AboutUS = () => {
 
         <Whatsapp_Button />
         {/* Laser Cutting Solution Section */}
-        <div className="relative">
+        <div style={{ 
+      backgroundImage: "url('/pattern17.png'), url('/pattern14.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "120px 120px,200px 200px",  //  Corrected size format (no comma)
+      backgroundPosition: "left 55px, right bottom",  
+      backgroundAttachment: "scroll",}}   className="relative">
           <img
             src="https://virmer.com/assets/images/resources/620/header_image/article-bg-14.jpg"
             alt="Laser Cutting"
             className="w-full h-auto max-w-7xl mx-auto rounded-lg shadow-lg"
           />
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute  inset-0 bg-blue-300 opacity-20"></div>
           <div className="max-w-7xl mx-auto space-y-6 relative overflow-hidden  px-6 py-12">
             <motion.div
               initial={{ opacity: 0.2, x: -100 }}
@@ -202,9 +222,9 @@ const AboutUS = () => {
               initial={{ opacity: 0.2, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.7, ease: "anticipate" }}
-              className="text-gray-600 text-justify"
+              className="text-gray-600 text-justify font-sec leading-loose"
             >
-              <div>
+              <div >
                 <strong>Metal laser cutting</strong> has transformed the
                 manufacturing sector by offering highly accurate, efficient, and
                 budget-friendly methods for shaping and cutting metal materials.
@@ -235,7 +255,7 @@ const AboutUS = () => {
               initial={{ opacity: 0.2, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.7, ease: "anticipate" }}
-              className="text-gray-800 text-justify"
+              className="text-gray-800 text-justify leading-loose font-robo"
             >
               <div>
                 Another <strong>advantage</strong> of{" "}

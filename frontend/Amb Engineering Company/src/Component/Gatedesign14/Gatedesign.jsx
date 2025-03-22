@@ -110,7 +110,14 @@ const Gatedesign = ({canonicalUrl}) => {
   return (
     <HelmetLayout title="Specific Stair Design - Laser Cut" canonicalUrl={canonicalUrl}>
 
-    <div  className={`bg-gradient-to-t from-gray-50 to-blue-50 bg-gray-100   py-6 ${navbaropenCheckForBelowContainerMargin?"mt-0":"mt-4"} md:py-8`}>
+    <div  
+    style={{ 
+          backgroundImage: "url('/pattern4.png'), url('/pattern18.png'), url('/pattern20.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "250px 200px,100px 100px,270px 270px",  //  Corrected size format (no comma)
+          backgroundPosition: "left top, right bottom,center 700px",  
+          backgroundAttachment: "scroll",  
+        }} className={`bg-gradient-to-t from-gray-50 to-blue-50 bg-gray-100   py-6 ${navbaropenCheckForBelowContainerMargin?"mt-0":"mt-4"} md:py-8`}>
         
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Image Section */}
@@ -164,7 +171,14 @@ const Gatedesign = ({canonicalUrl}) => {
       </div>
 
       {/* Laser Cut Gate Query Section */}
-      <div className="bg-amber-500 mt-10 p-8 rounded-lg shadow-lg">
+      <div  style={{ 
+          backgroundImage: " url('/pattern15.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "140px 140px",  //  Corrected size format (no comma)
+          backgroundPosition: "right bottom",  
+          backgroundAttachment: "scroll",  
+        }} className={`bg-amber-500 mt-10 p-8 rounded-lg shadow-lg from-gray-50   py-6 ${navbaropenCheckForBelowContainerMargin?"mt-0":"mt-4"} md:py-8`}>
+         {/* className="bg-amber-500 mt-10 p-8 rounded-lg shadow-lg"> */}
         <Lasercutgatequery />
       </div>
 

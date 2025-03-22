@@ -20,7 +20,7 @@ let stair = [
   {
     title: "Stair Design 1",
     pathn: "gate-design-1",
-    img: "https://cuttingmaster.com/wp-content/uploads/2022/03/stair-grill-720x750.jpg",
+    img: "https://i.pinimg.com/736x/43/2b/05/432b05da805922c95e6da00cad3af218.jpg",
     description:
       "A beautiful blend of traditional and contemporary elements, this gate design features intricate wrought-iron detailing with swirling patterns and floral motifs. The sophisticated design creates a sense of grandeur and elegance, making it perfect for homes with a vintage or classic style. Its tall structure provides privacy and security, while the detailed craftsmanship adds a decorative element that enhances the overall curb appeal of the property. This design is ideal for homeowners looking for a timeless piece that exudes luxury.",
     category: "Traditional, Wrought Iron",
@@ -105,8 +105,14 @@ const StairRailingOurServices = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl pt-5 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 ">
+        <div  className="max-w-7xl pt-5 mx-auto px-4 sm:px-6 lg:px-8">
+          <div style={{ 
+      backgroundImage: "url('/pattern14.png'), url('/pattern15.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "60px 60px,80px 80px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, right bottom",  
+      backgroundAttachment: "scroll",  
+    }} className="text-center mb-12 ">
             <motion.h1
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}

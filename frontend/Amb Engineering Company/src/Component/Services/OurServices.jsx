@@ -91,8 +91,19 @@ const OurServices = () => {
   return (
     <>
     {/* bg-gradient-to-tr from-red-500/80 via-yellow-100/50 to-blue-300 */}
-      <div className="bg-gradient-to-b from-amber-50 via-amber-200   to-amber-50 shadow-2xl"
-      
+      {/* <div className="bg-gradient-to-b from-amber-50 via-amber-200   to-amber-50 shadow-2xl"
+       */}
+      <div 
+  className="shadow-2xl"
+  style={{ 
+    backgroundImage: "url('/pattern17.png'), linear-gradient(to bottom, #fef3c76c, #fcd34d9a, #fef3c744) ",  
+    backgroundRepeat: "no-repeat, no-repeat",  // Space added
+    backgroundPosition: "right 13px, center top",  // Adjusted for better placement
+    backgroundSize: "90px 85px, cover",  // Ensures the first image keeps its size, gradient covers full area
+    backgroundAttachment: "scroll",
+  }}
+
+
       
       
       // style={{ 

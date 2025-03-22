@@ -12,7 +12,14 @@ const MaterialWeCanCut = () => {
 
   return (
     <>
-      <div className="bg-amber-50 py-12">
+      <div className="bg-amber-50 py-12" style={{
+        backgroundImage:
+          "url('/pattern14.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "10px 6px", // Corrected positions
+        backgroundSize: "70px 60px", // Resizing images
+        
+      }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg ">
           {/* Title Section */}
           <div className="text-center pt-4 mb-8 ">

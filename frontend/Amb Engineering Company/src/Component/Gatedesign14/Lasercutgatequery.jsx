@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Lasercutgatequery = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto text-xl p-6">
+    <div  className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto text-xl p-6">
       {/* Contact Form Section */}
       <div className="lg:w-1/3 w-full mx-auto">
         <div className="bg-gradient-to-r from-black via-white-500 to-blue-400 p-8 rounded-lg shadow-2xl">

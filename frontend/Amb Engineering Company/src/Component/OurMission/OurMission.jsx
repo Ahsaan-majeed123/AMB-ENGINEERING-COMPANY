@@ -43,13 +43,13 @@ const OurMission = () => {
   return (
     <>
     <div
-      className="bg-amber-50 py-16"
+      className="bg-amber-50 py-19"
       style={{
         backgroundImage:
-          "url('/pattern6.png'),url('/pattern4.png')",
+          "url('/pattern16.png'),url('/pattern4.png')",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "right top,  center left", // Corrected positions
-        backgroundSize: "230px 230px, 235px 320px,215px 180px", // Resizing images
+        backgroundPosition: "right 56px,  center left", // Corrected positions
+        backgroundSize: "120px 100px, 235px 320px,215px 180px", // Resizing images
         
       }}
     >

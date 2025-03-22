@@ -40,6 +40,13 @@ const LaserCuttingService = () => {
   return (
     <HelmetLayout title="Laser Cut Details" canonicalUrl={"https://www.ambengineers.com/laser-cutting-service-1"}>
       <div
+      style={{ 
+      backgroundImage: "url('/pattern14.png'), url('/pattern19.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "70px 70px,300px 300px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, right bottom",  
+      backgroundAttachment: "scroll",  
+    }}
         className={`md:mt-4 mt-4  bg-gray-300  py-0 md:py-13`}
         // className={`${
         //   navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"

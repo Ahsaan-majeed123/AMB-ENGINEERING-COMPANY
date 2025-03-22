@@ -27,7 +27,14 @@ const Counterup = () => {
   }, []);
 
   return (
-    <div className="py-12 bg-gray-100">
+    <div style={{ 
+      backgroundImage: "url('/pattern10.png'), url('/pattern20.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "100px 100px,100px 100px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, right bottom",  
+      backgroundAttachment: "scroll",  
+    }}
+     className="py-12 bg-blue-50">
       <div className="max-w-7xl mx-auto  p-6 rounded-lg shadow-lg bg-white">
         {/* <ScrollTrigger onEnter={() => setCountOn(true)} onExit={() => setCountOn(false)}> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

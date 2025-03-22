@@ -89,7 +89,13 @@ const Contact = () => {
     <HelmetLayout title="Contact Us - AMB Eng Comp" canonicalUrl={"https://www.ambengineers.com/contact"}>
       <div>
         <div
-         
+         style={{ 
+          backgroundImage: "url('/pattern5.png'), url('/pattern20.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "150px 100px,100px 100px",  //  Corrected size format (no comma)
+          backgroundPosition: "left top, right bottom",  
+          backgroundAttachment: "scroll",  
+        }}
           className={` ${navbaropenCheckForBelowContainerMargin?"mt-15":"mt-0"} md:py-13 bg-gray-50 py-12`}
           // className={` ${
           //   navbaropenCheckForBelowContainerMargin ? "mt-0" : "mt-4"
@@ -150,7 +156,13 @@ const Contact = () => {
         <Whatsapp_Button message="From Your Contact Us Page" />
 
         {/* Contact Form Section */}
-        <div className="max-w-7xl mx-auto py-12">
+        <div style={{ 
+      backgroundImage: "url('/pattern13.png'), url('/pattern21.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "80px 80px,150px 150px",  //  Corrected size format (no comma)
+      backgroundPosition: "left -10px, right 360px",  
+      backgroundAttachment: "scroll",  
+    }} className="max-w-7xl mx-auto py-12">
           <div className="capitalize text-center mb-6 text-5xl pb-8 font-bold text-gray-800">
             Get in Touch
           </div>

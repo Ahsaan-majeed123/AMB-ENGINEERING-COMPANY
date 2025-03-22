@@ -177,7 +177,15 @@ const GatelaserCutdesign = () => {
   return (
     <HelmetLayout title="Gate Designs - Laser Cut" canonicalUrl={"https://www.ambengineers.com/Gate-Laser-Cut-Design-4"}>
 
-    <div className={`$md:mt-4  mt-4 py-5 md:py-20 bg-gray-100   `}>
+    <div 
+    style={{ 
+      backgroundImage: "url('/pattern14.png'), url('/pattern20.png')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "70px 70px,200px 200px",  //  Corrected size format (no comma)
+      backgroundPosition: "left top, right bottom",  
+      backgroundAttachment: "scroll",  
+    }}
+    className={`$md:mt-4  mt-4 py-5 md:py-20 bg-gray-100   `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <motion.h1

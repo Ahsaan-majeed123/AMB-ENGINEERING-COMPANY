@@ -44,7 +44,7 @@ const OurServicesClick = () => {
 
   return (
     <div
-      className={`bg-gray-50 md:mt-5 mt-3  py-13  `}
+      className={`bg-gradient-to-b from-gray-50 via-gray-300 to-gray-50 md:mt-5 mt-3  py-13  `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {showScrolltoTop && <ScrollToTop />}

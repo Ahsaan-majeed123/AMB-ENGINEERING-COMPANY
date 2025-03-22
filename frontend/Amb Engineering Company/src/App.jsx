@@ -149,7 +149,7 @@ const App = () => {
     {
       title: "Stair Railing Design 1",
       pathn: "stair-design-1",
-      img: "https://cuttingmaster.com/wp-content/uploads/2022/03/stair-grill-720x750.jpg",
+      img: "https://i.pinimg.com/736x/43/2b/05/432b05da805922c95e6da00cad3af218.jpg",
       description:
         "This stair railing design blends traditional and contemporary elements, with intricate wrought-iron detailing and swirling floral motifs. The ornate patterns create a sense of grandeur and elegance, making it ideal for classic or vintage-style homes. The design features a tall structure that provides both privacy and security, while the detailed metalwork adds an artistic touch that elevates the overall aesthetic of the staircase. Its graceful curves and intricate design make it a perfect choice for homeowners who want a timeless and luxurious look for their property.",
       category: "Traditional, Wrought Iron, Elegant",

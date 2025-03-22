@@ -94,8 +94,16 @@ const Wallcladingdesign = ({canonicalUrl}) => {
     <HelmetLayout title="Specific Gate Design - Laser Cut"   canonicalUrl={canonicalUrl}>
 
     <div  
+
+style={{ 
+  backgroundImage: "url('/pattern14.png'),url('/pattern20.png'),  url('/pattern15.png')",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "60px 60px,220px 220px,80px 80px",  //  Corrected size format (no comma)
+  backgroundPosition: "left top,center 800px, right bottom",  
+  backgroundAttachment: "scroll",  
+}}
     
-    className={`bg-gradient-to-l from-gray-100 to-blue-100  md:mt-5 mt-3     md:py-13  py-8`}
+    className={`bg-blue-50  md:mt-5 mt-3     md:py-13  py-8`}
     // className={`bg-gray-100 ${navbaropenCheckForBelowContainerMargin?"mt-0":"mt-4"}  py-8`}
     
     
