@@ -69,7 +69,7 @@ const Sitemap = () => {
       )}
 
       <div className="mt-8 text-center">
-        <p className="text-gray-600">Need help? Please <a href="mailto:support@ambengineers.com" className="text-blue-500">contact us</a>.</p>
+        <p className="text-gray-600">Need help? Please <a href="mailto:farhanbajwa418@gmail.com" className="text-blue-500">contact us</a>.</p>
       </div>
     </div>
   );

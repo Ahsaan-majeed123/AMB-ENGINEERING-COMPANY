@@ -12,7 +12,7 @@ const Feelfreecontact = () => {
           +92-304 4681357
         </div>
         <a
-          href="https://wa.me/923071141424?text=Hello%20bro%20how%20can%20i%20help%20you?"
+          href="https://wa.me/923044681357?text=Hello%20bro%20how%20can%20i%20help%20you?"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp Me"
