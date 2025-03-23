@@ -38,6 +38,7 @@ const Sitemap = () => {
     fetchSitemap();
   }, []);
 
+  let a = "";
   return (
     <div className="max-w-4xl mx-auto px-6 py-8">
       <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">Sitemap</h1>
@@ -53,6 +54,7 @@ const Sitemap = () => {
       ) : (
         <ul className="list-disc list-inside space-y-4 text-lg text-gray-700">
           {links.map((link, index) => (
+        
             <li key={index}>
               <a 
                 href={link} 
@@ -60,7 +62,7 @@ const Sitemap = () => {
                 rel="noopener noreferrer" 
                 className="text-blue-500 hover:text-blue-700 transition duration-300"
               >
-                {link}
+                {link.split('/').filter(Boolean).pop()}
               </a>
             </li>
           ))}
