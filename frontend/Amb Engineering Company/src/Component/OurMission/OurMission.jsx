@@ -54,7 +54,7 @@ const OurMission = () => {
       }}
     >
       <div
-       className=" flex flex-col bg-gradient-to-bl from-amber-100 to-white md:flex-row gap-8 max-w-7xl mx-auto px-4 border-t-4 pt-5 border-b-4 border-amber-600 rounded-lg shadow-xl">
+       className=" flex flex-col bg-gradient-to-bl from-amber-200 to-white md:flex-row gap-8 max-w-7xl mx-auto px-4 border-t-4 pt-5 border-b-4 border-amber-600 rounded shadow-xl">
         {/* Image Section */}
         <div className="relative  w-full sm:w-[50%] md:w-[38%] mx-auto overflow-hidden rounded-lg shadow-lg  h-max">
           <img
