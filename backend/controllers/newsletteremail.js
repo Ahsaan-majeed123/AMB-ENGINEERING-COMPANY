@@ -26,12 +26,13 @@ const transport_sendemail_newletter = async (req, res) => {
     await transport.sendMail({
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER,  // Owner's email address
-      subject: 'New Newsletter Subscription',
+      subject: 'New Newsletter Subscription (AMB ENG WEBSITE)',
       html: `
         <html>
           <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
             <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #333333;">New Newsletter Subscription</h2>
+              <h1 style="font-size: 16px; color: #555555;">AMB Engineering Website</h1>
               <p style="font-size: 16px; color: #555555;">You have a new subscriber:</p>
               <ul style="list-style: none; padding: 0;">
                 <li><strong>Email:</strong> ${email}</li>
@@ -47,12 +48,13 @@ const transport_sendemail_newletter = async (req, res) => {
     await transport.sendMail({
       from: process.env.GMAIL_USER,
       to: email,
-      subject: 'Thank you for subscribing!',
+      subject: 'Thank you for subscribing (AMB Engineering Website)!',
       html: `
         <html>
           <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
             <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #333333;">Thank you for subscribing!</h2>
+              <h1 style="font-size: 16px; color: #555555;">AMB Engineering Website</h1>
               <p style="font-size: 16px; color: #555555;">Thank you for subscribing to our newsletter. You'll receive the latest updates from us soon.</p>
               <p style="font-size: 16px; color: #555555;">Stay tuned for exciting content!</p>
               <p style="font-size: 14px; color: #777777;">If you have any questions, feel free to contact us anytime.</p>
