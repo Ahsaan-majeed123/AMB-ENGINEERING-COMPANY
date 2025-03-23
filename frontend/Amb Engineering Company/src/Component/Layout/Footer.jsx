@@ -70,7 +70,7 @@ const Footer = () => {
             <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
             <li><Link to="/about-AMB-ENG-Company" className="hover:text-blue-500">About Us</Link></li>
             <li><Link to="/contact" className="hover:text-blue-500">Contact</Link></li>
-            <li><Link to="https://www.ambengineers.com/sitemap.xml" target="_blank" className="hover:text-blue-500">Sitemap</Link></li>
+            <li><Link to="/sitemap" target="_blank" className="hover:text-blue-500">Sitemap</Link></li>
           </ul>
         </div>
 

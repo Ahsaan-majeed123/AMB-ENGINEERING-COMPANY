@@ -17,6 +17,7 @@ import WallCladdingOurServices from "./Component/Services/WallCladdingOurService
 import { WallCladding8context } from "./Component/Context/wallClading8";
 import Wallcladingdesign from "./Component/WallCladingdesign8/Wallcladingdesign8";
 import OurServicesClick from "./Component/Services/OurServicesClick";
+import Sitemap from "./Component/Sitemap/Sitemap";
 
 const App = () => {
 
@@ -357,6 +358,7 @@ const { wallclading8, setwallclading8} = useContext(WallCladding8context);
         <Route path="/contact" element={<Contact />} />
 
 
+        <Route path="/sitemap" element={<Sitemap/>}/>
 
         <Route path="/about-AMB-ENG-Company" element={<AboutUS />} />
       </Routes>
