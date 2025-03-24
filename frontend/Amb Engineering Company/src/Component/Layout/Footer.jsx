@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <Link to="/">
             <img
-              src="./blacklogo.jpg"
+              src="../blacklogo.jpg"
               alt="AMB Engineering Company Logo"
               className="rounded-full object-fill w-32 h-32 mx-auto md:mx-0"
             />
