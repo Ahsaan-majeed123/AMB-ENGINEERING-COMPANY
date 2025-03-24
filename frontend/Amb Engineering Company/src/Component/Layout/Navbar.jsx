@@ -176,7 +176,7 @@ const Navbar = () => {
             <div className="w-15  mb-1  ml-6 md:w-15 cursor-pointer rounded-full border-4 border-white shadow-lg">
               <img
                 className="w-15 md:w-17 rounded-full"
-                src={'./logo.jpg'}
+                src={'../logo.jpg'}
                 // src="https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg"
                 alt="Logo"
                 title="AMB ENG COMPANY"

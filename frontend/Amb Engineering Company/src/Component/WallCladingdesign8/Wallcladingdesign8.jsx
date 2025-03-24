@@ -93,6 +93,7 @@ const Wallcladingdesign = ({canonicalUrl}) => {
   return (
     <HelmetLayout title="Specific Gate Design - Laser Cut"   canonicalUrl={canonicalUrl}>
 
+
     <div  
 
 style={{ 
@@ -130,6 +131,7 @@ style={{
               transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
               className="text-4xl uppercase text-amber-600 font-bold  mb-4"
             >
+              
               {/* {item.title.split(" ").slice(0, -1).join(" ")} 
                   {
                      parseInt(item.title.split(" ").pop())+1
